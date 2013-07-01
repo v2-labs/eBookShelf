@@ -7,31 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF0BC1F51780E6EE00203FFE /* V2BSDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0BC1E81780E6EE00203FFE /* V2BSDocument.m */; };
+		CF0BC1F81780E6EE00203FFE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CF0BC1EC1780E6EE00203FFE /* Credits.rtf */; };
+		CF0BC1FA1780E6EE00203FFE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0BC1F01780E6EE00203FFE /* MainMenu.xib */; };
+		CF0BC1FB1780E6EE00203FFE /* V2BSDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0BC1F21780E6EE00203FFE /* V2BSDocument.xib */; };
+		CF0BC1FC1780E6EE00203FFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0BC1F41780E6EE00203FFE /* main.m */; };
+		CF0BC2DE1780F97300203FFE /* DropboxOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0BC2671780EDFE00203FFE /* DropboxOSX.framework */; };
+		CF84623517811F2400E75927 /* DropboxOSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF0BC2671780EDFE00203FFE /* DropboxOSX.framework */; };
 		CFA2FB15148D0CA7000540DB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA2FB14148D0CA7000540DB /* Cocoa.framework */; };
-		CFA2FB1F148D0CA7000540DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFA2FB1D148D0CA7000540DB /* InfoPlist.strings */; };
-		CFA2FB21148D0CA7000540DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA2FB20148D0CA7000540DB /* main.m */; };
-		CFA2FB25148D0CA7000540DB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CFA2FB23148D0CA7000540DB /* Credits.rtf */; };
-		CFA2FB28148D0CA7000540DB /* MBSDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA2FB27148D0CA7000540DB /* MBSDocument.m */; };
-		CFA2FB2B148D0CA7000540DB /* MBSDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFA2FB29148D0CA7000540DB /* MBSDocument.xib */; };
-		CFA2FB2E148D0CA7000540DB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFA2FB2C148D0CA7000540DB /* MainMenu.xib */; };
+		CFF28C771634285F00CA27D1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF28C741634272900CA27D1 /* Security.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CF84623417811F1000E75927 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CF84623517811F2400E75927 /* DropboxOSX.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CF0BC1E71780E6EE00203FFE /* V2BSDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2BSDocument.h; sourceTree = "<group>"; };
+		CF0BC1E81780E6EE00203FFE /* V2BSDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V2BSDocument.m; sourceTree = "<group>"; };
+		CF0BC1E91780E6EE00203FFE /* eBookShelf-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "eBookShelf-Info.plist"; sourceTree = "<group>"; };
+		CF0BC1EA1780E6EE00203FFE /* eBookShelf-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "eBookShelf-Prefix.pch"; sourceTree = "<group>"; };
+		CF0BC1EB1780E6EE00203FFE /* eBookShelf.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = eBookShelf.entitlements; sourceTree = "<group>"; };
+		CF0BC1ED1780E6EE00203FFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CF0BC1EF1780E6EE00203FFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF0BC1F11780E6EE00203FFE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CF0BC1F31780E6EE00203FFE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/V2BSDocument.xib; sourceTree = "<group>"; };
+		CF0BC1F41780E6EE00203FFE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF0BC2671780EDFE00203FFE /* DropboxOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxOSX.framework; path = "MacOS X/Frameworks/DropboxOSX.framework"; sourceTree = "<group>"; };
 		CFA2FB10148D0CA7000540DB /* eBookShelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eBookShelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA2FB14148D0CA7000540DB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CFA2FB17148D0CA7000540DB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		CFA2FB18148D0CA7000540DB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		CFA2FB19148D0CA7000540DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CFA2FB1C148D0CA7000540DB /* eBookShelf-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "eBookShelf-Info.plist"; sourceTree = "<group>"; };
-		CFA2FB1E148D0CA7000540DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CFA2FB20148D0CA7000540DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CFA2FB22148D0CA7000540DB /* eBookShelf-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "eBookShelf-Prefix.pch"; sourceTree = "<group>"; };
-		CFA2FB24148D0CA7000540DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		CFA2FB26148D0CA7000540DB /* MBSDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBSDocument.h; sourceTree = "<group>"; };
-		CFA2FB27148D0CA7000540DB /* MBSDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBSDocument.m; sourceTree = "<group>"; };
-		CFA2FB2A148D0CA7000540DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MBSDocument.xib; sourceTree = "<group>"; };
-		CFA2FB2D148D0CA7000540DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		CFA2FB34148D0D8D000540DB /* eBookShelf.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = eBookShelf.entitlements; sourceTree = "<group>"; };
+		CFF28C741634272900CA27D1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,16 +57,43 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFA2FB15148D0CA7000540DB /* Cocoa.framework in Frameworks */,
+				CFF28C771634285F00CA27D1 /* Security.framework in Frameworks */,
+				CF0BC2DE1780F97300203FFE /* DropboxOSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF0BC1E61780E6EE00203FFE /* MacOS X */ = {
+			isa = PBXGroup;
+			children = (
+				CF0BC1E71780E6EE00203FFE /* V2BSDocument.h */,
+				CF0BC1E81780E6EE00203FFE /* V2BSDocument.m */,
+				CF0BC1F21780E6EE00203FFE /* V2BSDocument.xib */,
+				CF0BC1F01780E6EE00203FFE /* MainMenu.xib */,
+				CF0BC1EB1780E6EE00203FFE /* eBookShelf.entitlements */,
+				CF0BC2651780E8E700203FFE /* Supporting Files */,
+			);
+			path = "MacOS X";
+			sourceTree = "<group>";
+		};
+		CF0BC2651780E8E700203FFE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF0BC1E91780E6EE00203FFE /* eBookShelf-Info.plist */,
+				CF0BC1EE1780E6EE00203FFE /* InfoPlist.strings */,
+				CF0BC1F41780E6EE00203FFE /* main.m */,
+				CF0BC1EA1780E6EE00203FFE /* eBookShelf-Prefix.pch */,
+				CF0BC1EC1780E6EE00203FFE /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		CFA2FB05148D0CA6000540DB = {
 			isa = PBXGroup;
 			children = (
-				CFA2FB1A148D0CA7000540DB /* eBookShelf */,
+				CF0BC1E61780E6EE00203FFE /* MacOS X */,
 				CFA2FB13148D0CA7000540DB /* Frameworks */,
 				CFA2FB11148D0CA7000540DB /* Products */,
 			);
@@ -78,33 +122,10 @@
 				CFA2FB17148D0CA7000540DB /* AppKit.framework */,
 				CFA2FB18148D0CA7000540DB /* CoreData.framework */,
 				CFA2FB19148D0CA7000540DB /* Foundation.framework */,
+				CF0BC2671780EDFE00203FFE /* DropboxOSX.framework */,
+				CFF28C741634272900CA27D1 /* Security.framework */,
 			);
 			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		CFA2FB1A148D0CA7000540DB /* eBookShelf */ = {
-			isa = PBXGroup;
-			children = (
-				CFA2FB34148D0D8D000540DB /* eBookShelf.entitlements */,
-				CFA2FB26148D0CA7000540DB /* MBSDocument.h */,
-				CFA2FB27148D0CA7000540DB /* MBSDocument.m */,
-				CFA2FB29148D0CA7000540DB /* MBSDocument.xib */,
-				CFA2FB2C148D0CA7000540DB /* MainMenu.xib */,
-				CFA2FB1B148D0CA7000540DB /* Supporting Files */,
-			);
-			path = eBookShelf;
-			sourceTree = "<group>";
-		};
-		CFA2FB1B148D0CA7000540DB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CFA2FB1C148D0CA7000540DB /* eBookShelf-Info.plist */,
-				CFA2FB1D148D0CA7000540DB /* InfoPlist.strings */,
-				CFA2FB20148D0CA7000540DB /* main.m */,
-				CFA2FB22148D0CA7000540DB /* eBookShelf-Prefix.pch */,
-				CFA2FB23148D0CA7000540DB /* Credits.rtf */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +138,7 @@
 				CFA2FB0C148D0CA7000540DB /* Sources */,
 				CFA2FB0D148D0CA7000540DB /* Frameworks */,
 				CFA2FB0E148D0CA7000540DB /* Resources */,
+				CF84623417811F1000E75927 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -133,8 +155,14 @@
 		CFA2FB07148D0CA6000540DB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
-				ORGANIZATIONNAME = "Software Architect";
+				CLASSPREFIX = V2BS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "v2 Software";
+				TargetAttributes = {
+					CFA2FB0F148D0CA7000540DB = {
+						DevelopmentTeam = KNERK97WK8;
+					};
+				};
 			};
 			buildConfigurationList = CFA2FB0A148D0CA6000540DB /* Build configuration list for PBXProject "eBookShelf" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -158,10 +186,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFA2FB1F148D0CA7000540DB /* InfoPlist.strings in Resources */,
-				CFA2FB25148D0CA7000540DB /* Credits.rtf in Resources */,
-				CFA2FB2B148D0CA7000540DB /* MBSDocument.xib in Resources */,
-				CFA2FB2E148D0CA7000540DB /* MainMenu.xib in Resources */,
+				CF0BC1FA1780E6EE00203FFE /* MainMenu.xib in Resources */,
+				CF0BC1FB1780E6EE00203FFE /* V2BSDocument.xib in Resources */,
+				CF0BC1F81780E6EE00203FFE /* Credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,44 +199,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFA2FB21148D0CA7000540DB /* main.m in Sources */,
-				CFA2FB28148D0CA7000540DB /* MBSDocument.m in Sources */,
+				CF0BC1FC1780E6EE00203FFE /* main.m in Sources */,
+				CF0BC1F51780E6EE00203FFE /* V2BSDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CFA2FB1D148D0CA7000540DB /* InfoPlist.strings */ = {
+		CF0BC1EC1780E6EE00203FFE /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CFA2FB1E148D0CA7000540DB /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		CFA2FB23148D0CA7000540DB /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CFA2FB24148D0CA7000540DB /* en */,
+				CF0BC1ED1780E6EE00203FFE /* en */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		CFA2FB29148D0CA7000540DB /* MBSDocument.xib */ = {
+		CF0BC1EE1780E6EE00203FFE /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CFA2FB2A148D0CA7000540DB /* en */,
+				CF0BC1EF1780E6EE00203FFE /* en */,
 			);
-			name = MBSDocument.xib;
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		CFA2FB2C148D0CA7000540DB /* MainMenu.xib */ = {
+		CF0BC1F01780E6EE00203FFE /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CFA2FB2D148D0CA7000540DB /* en */,
+				CF0BC1F11780E6EE00203FFE /* en */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		CF0BC1F21780E6EE00203FFE /* V2BSDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF0BC1F31780E6EE00203FFE /* en */,
+			);
+			name = V2BSDocument.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -219,8 +246,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -235,6 +267,9 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
@@ -246,8 +281,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -256,6 +296,9 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
@@ -265,11 +308,16 @@
 		CFA2FB32148D0CA7000540DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = eBookShelf/eBookShelf.entitlements;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_ENTITLEMENTS = "MacOS X/eBookShelf.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(SRCROOT)/MacOS\\ X/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "eBookShelf/eBookShelf-Prefix.pch";
-				INFOPLIST_FILE = "eBookShelf/eBookShelf-Info.plist";
+				GCC_PREFIX_HEADER = "MacOS X/eBookShelf-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/MacOS X/eBookShelf-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -278,11 +326,16 @@
 		CFA2FB33148D0CA7000540DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = eBookShelf/eBookShelf.entitlements;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_ENTITLEMENTS = "MacOS X/eBookShelf.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(SRCROOT)/MacOS\\ X/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "eBookShelf/eBookShelf-Prefix.pch";
-				INFOPLIST_FILE = "eBookShelf/eBookShelf-Info.plist";
+				GCC_PREFIX_HEADER = "MacOS X/eBookShelf-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/MacOS X/eBookShelf-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -307,6 +360,7 @@
 				CFA2FB33148D0CA7000540DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
