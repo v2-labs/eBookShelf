@@ -2,7 +2,7 @@
 //  main.m
 //  eBookShelf
 //
-//  Created by Juvenal Silva on 05/12/2011.
+//  Created by Juvenal A. Silva Jr. on 05/12/2011.
 //  Copyright (c) 2011 v2 Software. All rights reserved.
 //
 
