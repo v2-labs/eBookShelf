@@ -1,10 +1,27 @@
-//
-//  V2BSDocument.m
-//  eBookShelf
-//
-//  Created by Juvenal A. Silva Jr. on 05/12/2011.
-//  Copyright (c) 2011 v2 Software. All rights reserved.
-//
+/*
+ * V2BSDocument.m
+ * eBookShelf
+ *
+ * Created by Juvenal A. Silva Jr. <juvenal.silva@mac.com>
+ * Copyright (c) 2014 v2 labs. All rights reserved
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+ * MA 02110-1301, USA.
+ *
+ *
+ */
 
 #import "V2BSDocument.h"
 
@@ -27,7 +44,7 @@
 	 *
 	 *
 	 */
-	-(id) init {
+	- (id) init {
 		self = [super init];
 		if (self) {
 			/* 
@@ -45,7 +62,7 @@
 	 *
 	 *
 	 */
-	-(NSString *) windowNibName {
+	- (NSString *) windowNibName {
 		/* 
 		 * Override returning the nib file name of the document
 		 * If you need to use a subclass of NSWindowController or if your document supports multiple
@@ -62,7 +79,7 @@
 	 *
 	 *
 	 */
-	-(void) windowControllerDidLoadNib: (NSWindowController *)aController {
+	- (void) windowControllerDidLoadNib: (NSWindowController *)aController {
 		[super windowControllerDidLoadNib: aController];
 		/* 
 		 * Add any code here that needs to be executed once the windowController has loaded the
@@ -77,7 +94,7 @@
 	 *
 	 *
 	 */
-	-(NSData *) dataOfType: (NSString *)typeName
+	- (NSData *) dataOfType: (NSString *)typeName
 					 error: (NSError **)outError {
 		/*
 		 * Insert code here to write your document to data of the specified type.
@@ -100,7 +117,7 @@
 	 *
 	 *
 	 */
-	-(BOOL) readFromData: (NSData *)data
+	- (BOOL) readFromData: (NSData *)data
 				  ofType: (NSString *)typeName
 				   error: (NSError **)outError {
 		/*
@@ -125,7 +142,7 @@
 	 *
 	 *
 	 */
-	+(BOOL) autosavesInPlace {
+	+ (BOOL) autosavesInPlace {
 		return YES;
 	}
 

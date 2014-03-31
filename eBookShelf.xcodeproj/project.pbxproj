@@ -13,13 +13,29 @@
 		CF0BC1FB1780E6EE00203FFE /* V2BSDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0BC1F21780E6EE00203FFE /* V2BSDocument.xib */; };
 		CF0BC1FC1780E6EE00203FFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0BC1F41780E6EE00203FFE /* main.m */; };
 		CF0BC2DE1780F97300203FFE /* DropboxOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0BC2671780EDFE00203FFE /* DropboxOSX.framework */; };
-		CF79B61E178F45A60023538D /* hashID.h in Headers */ = {isa = PBXBuildFile; fileRef = CF79B613178F428D0023538D /* hashID.h */; };
+		CF22B00A18923159008DC6D5 /* V2BSMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF22B00918923159008DC6D5 /* V2BSMainWindowController.m */; };
 		CF79B61F178F45A60023538D /* hashID.c in Sources */ = {isa = PBXBuildFile; fileRef = CF79B614178F42AC0023538D /* hashID.c */; };
 		CF84623517811F2400E75927 /* DropboxOSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF0BC2671780EDFE00203FFE /* DropboxOSX.framework */; };
 		CF868CDA1781468900C86D7A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF868CD91781468900C86D7A /* Images.xcassets */; };
 		CFA2FB15148D0CA7000540DB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA2FB14148D0CA7000540DB /* Cocoa.framework */; };
+		CFA5B6A7188AFB8D0093CA7B /* V2BSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA5B6A6188AFB8D0093CA7B /* V2BSAppDelegate.m */; };
+		CFA5B6A8188CD1B20093CA7B /* eBookShelfLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF79B61A178F458F0023538D /* eBookShelfLib.a */; };
+		CFA5B6AD188DD8440093CA7B /* database.c in Sources */ = {isa = PBXBuildFile; fileRef = CFA5B6AB188DD8440093CA7B /* database.c */; };
+		CFA5B6B0188E027E0093CA7B /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = CFA5B6AF188E027E0093CA7B /* sha1.c */; };
+		CFA5B6B1188E0B140093CA7B /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = CFA5B6AF188E027E0093CA7B /* sha1.c */; };
+		CFA5B6B2188E0B240093CA7B /* database.c in Sources */ = {isa = PBXBuildFile; fileRef = CFA5B6AB188DD8440093CA7B /* database.c */; };
 		CFF28C771634285F00CA27D1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF28C741634272900CA27D1 /* Security.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFA5B6A9188DD7310093CA7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFA2FB07148D0CA6000540DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF79B619178F458F0023538D;
+			remoteInfo = eBookShelfLib;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		CF84623417811F1000E75927 /* CopyFiles */ = {
@@ -46,15 +62,23 @@
 		CF0BC1F31780E6EE00203FFE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/V2BSDocument.xib; sourceTree = "<group>"; };
 		CF0BC1F41780E6EE00203FFE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CF0BC2671780EDFE00203FFE /* DropboxOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxOSX.framework; path = "MacOS X/Frameworks/DropboxOSX.framework"; sourceTree = "<group>"; };
+		CF22B00818923159008DC6D5 /* V2BSMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2BSMainWindowController.h; sourceTree = "<group>"; };
+		CF22B00918923159008DC6D5 /* V2BSMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V2BSMainWindowController.m; sourceTree = "<group>"; };
 		CF79B613178F428D0023538D /* hashID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hashID.h; path = common/hashID.h; sourceTree = "<group>"; };
 		CF79B614178F42AC0023538D /* hashID.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = hashID.c; path = common/hashID.c; sourceTree = "<group>"; };
-		CF79B61A178F458F0023538D /* libeBookShelfLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libeBookShelfLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF79B61A178F458F0023538D /* eBookShelfLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = eBookShelfLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF868CD91781468900C86D7A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CFA2FB10148D0CA7000540DB /* eBookShelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eBookShelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA2FB14148D0CA7000540DB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CFA2FB17148D0CA7000540DB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		CFA2FB18148D0CA7000540DB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		CFA2FB19148D0CA7000540DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CFA5B6A5188AFB8D0093CA7B /* V2BSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2BSAppDelegate.h; sourceTree = "<group>"; };
+		CFA5B6A6188AFB8D0093CA7B /* V2BSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V2BSAppDelegate.m; sourceTree = "<group>"; };
+		CFA5B6AB188DD8440093CA7B /* database.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = database.c; path = common/database.c; sourceTree = "<group>"; };
+		CFA5B6AC188DD8440093CA7B /* database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = database.h; path = common/database.h; sourceTree = "<group>"; };
+		CFA5B6AE188DFEDB0093CA7B /* sha1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = common/sha1.h; sourceTree = "<group>"; };
+		CFA5B6AF188E027E0093CA7B /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sha1.c; path = common/sha1.c; sourceTree = "<group>"; };
 		CFF28C741634272900CA27D1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -70,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFA5B6A8188CD1B20093CA7B /* eBookShelfLib.a in Frameworks */,
 				CFA2FB15148D0CA7000540DB /* Cocoa.framework in Frameworks */,
 				CFF28C771634285F00CA27D1 /* Security.framework in Frameworks */,
 				CF0BC2DE1780F97300203FFE /* DropboxOSX.framework in Frameworks */,
@@ -89,6 +114,10 @@
 				CF0BC1EB1780E6EE00203FFE /* eBookShelf.entitlements */,
 				CF868CD91781468900C86D7A /* Images.xcassets */,
 				CF0BC2651780E8E700203FFE /* Supporting Files */,
+				CFA5B6A5188AFB8D0093CA7B /* V2BSAppDelegate.h */,
+				CFA5B6A6188AFB8D0093CA7B /* V2BSAppDelegate.m */,
+				CF22B00818923159008DC6D5 /* V2BSMainWindowController.h */,
+				CF22B00918923159008DC6D5 /* V2BSMainWindowController.m */,
 			);
 			path = "MacOS X";
 			sourceTree = "<group>";
@@ -108,8 +137,12 @@
 		CF79B612178F41F60023538D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CFA5B6AB188DD8440093CA7B /* database.c */,
+				CFA5B6AC188DD8440093CA7B /* database.h */,
 				CF79B613178F428D0023538D /* hashID.h */,
 				CF79B614178F42AC0023538D /* hashID.c */,
+				CFA5B6AE188DFEDB0093CA7B /* sha1.h */,
+				CFA5B6AF188E027E0093CA7B /* sha1.c */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -128,7 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				CFA2FB10148D0CA7000540DB /* eBookShelf.app */,
-				CF79B61A178F458F0023538D /* libeBookShelfLib.a */,
+				CF79B61A178F458F0023538D /* eBookShelfLib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				CFA2FB14148D0CA7000540DB /* Cocoa.framework */,
+				CFA2FB19148D0CA7000540DB /* Foundation.framework */,
+				CFA2FB17148D0CA7000540DB /* AppKit.framework */,
 				CFA2FB16148D0CA7000540DB /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -145,9 +180,7 @@
 		CFA2FB16148D0CA7000540DB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CFA2FB17148D0CA7000540DB /* AppKit.framework */,
 				CFA2FB18148D0CA7000540DB /* CoreData.framework */,
-				CFA2FB19148D0CA7000540DB /* Foundation.framework */,
 				CF0BC2671780EDFE00203FFE /* DropboxOSX.framework */,
 				CFF28C741634272900CA27D1 /* Security.framework */,
 			);
@@ -161,7 +194,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF79B61E178F45A60023538D /* hashID.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +214,7 @@
 			);
 			name = eBookShelfLib;
 			productName = eBookShelfLib;
-			productReference = CF79B61A178F458F0023538D /* libeBookShelfLib.a */;
+			productReference = CF79B61A178F458F0023538D /* eBookShelfLib.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		CFA2FB0F148D0CA7000540DB /* eBookShelf */ = {
@@ -193,10 +225,12 @@
 				CFA2FB0D148D0CA7000540DB /* Frameworks */,
 				CFA2FB0E148D0CA7000540DB /* Resources */,
 				CF84623417811F1000E75927 /* CopyFiles */,
+				CFA5B6A3188955B10093CA7B /* Run Script */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CFA5B6AA188DD7310093CA7B /* PBXTargetDependency */,
 			);
 			name = eBookShelf;
 			productName = eBookShelf;
@@ -210,8 +244,8 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = V2BS;
-				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "v2 Software";
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "v2 lab";
 				TargetAttributes = {
 					CFA2FB0F148D0CA7000540DB = {
 						DevelopmentTeam = KNERK97WK8;
@@ -255,11 +289,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CFA5B6A3188955B10093CA7B /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "LOCATION=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\nIDENTITY=\"Developer ID Application: Juvenal Silva\"\nfor framework in DropboxOSX; do\n    codesign --verbose --force --sign \"${IDENTITY}\" \"${LOCATION}/${framework}.framework/Versions/A\"\ndone";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CF79B616178F458F0023538D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFA5B6B2188E0B240093CA7B /* database.c in Sources */,
+				CFA5B6B1188E0B140093CA7B /* sha1.c in Sources */,
 				CF79B61F178F45A60023538D /* hashID.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,12 +321,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFA5B6B0188E027E0093CA7B /* sha1.c in Sources */,
+				CFA5B6AD188DD8440093CA7B /* database.c in Sources */,
+				CFA5B6A7188AFB8D0093CA7B /* V2BSAppDelegate.m in Sources */,
+				CF22B00A18923159008DC6D5 /* V2BSMainWindowController.m in Sources */,
 				CF0BC1FC1780E6EE00203FFE /* main.m in Sources */,
 				CF0BC1F51780E6EE00203FFE /* V2BSDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFA5B6AA188DD7310093CA7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF79B619178F458F0023538D /* eBookShelfLib */;
+			targetProxy = CFA5B6A9188DD7310093CA7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CF0BC1EC1780E6EE00203FFE /* Credits.rtf */ = {
@@ -314,29 +379,27 @@
 		CF79B61C178F458F0023538D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CODE_SIGN_IDENTITY = "Mac Developer: Juvenal Silva (H2N2D62X2S)";
-				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_PREFIX = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "B20EA080-7A05-42E2-BDA0-DEF406D38109";
+				PROVISIONING_PROFILE = "1CB3BB93-B454-49CB-86E9-187AC1427BF0";
 			};
 			name = Debug;
 		};
 		CF79B61D178F458F0023538D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -344,11 +407,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CODE_SIGN_IDENTITY = "Mac Developer: Juvenal Silva (H2N2D62X2S)";
 				ENABLE_NS_ASSERTIONS = NO;
-				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_PREFIX = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "B20EA080-7A05-42E2-BDA0-DEF406D38109";
+				PROVISIONING_PROFILE = "1CB3BB93-B454-49CB-86E9-187AC1427BF0";
 			};
 			name = Release;
 		};
@@ -356,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -374,7 +438,7 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -393,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -405,7 +470,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -422,7 +487,7 @@
 		CFA2FB32148D0CA7000540DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "MacOS X/eBookShelf.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
@@ -435,6 +500,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacOS X/eBookShelf-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/MacOS X/eBookShelf-Info.plist";
+				OTHER_CODE_SIGN_FLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -444,7 +510,7 @@
 		CFA2FB33148D0CA7000540DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "MacOS X/eBookShelf.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
@@ -457,6 +523,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacOS X/eBookShelf-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/MacOS X/eBookShelf-Info.plist";
+				OTHER_CODE_SIGN_FLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
