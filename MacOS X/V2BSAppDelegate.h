@@ -1,6 +1,6 @@
 /*
- * V2BSAppDelegate.h
  * eBookShelf
+ * V2BSAppDelegate.h
  *
  * Created by Juvenal A. Silva Jr. <juvenal.silva@mac.com>
  * Copyright (c) 2014 v2 labs. All rights reserved
@@ -23,15 +23,14 @@
  *
  */
 
-#import <Foundation/Foundation.h>
+#import <Cocoa/Cocoa.h>
+
+@class V2BSMainWindowController;
+@class V2BSBookShelf;
 
 @interface V2BSAppDelegate : NSObject <NSApplicationDelegate>
+	@property (retain) V2BSMainWindowController *mainWindow;
+	@property (retain) V2BSBookShelf *bookShelf;
 
-	@property (assign) IBOutlet NSWindow *window;
-	@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-	@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-	@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-	
-	- (IBAction) saveAction: (id) sender;
-
+	- (IBAction) newBookShelf: (id) sender;
 @end

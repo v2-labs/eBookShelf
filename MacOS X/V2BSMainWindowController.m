@@ -9,21 +9,22 @@
 #import "V2BSMainWindowController.h"
 
 @interface V2BSMainWindowController ()
-	// Define private properties
-	@property (nonatomic, strong) NSArray *sidebarItems;
+	/* Define private properties
+	@property (nonatomic, strong) NSArray *sidebarItems; */
 
 @end
 
 
 @implementation V2BSMainWindowController
-	/* Synthesize properties' accessors */
-	@synthesize sidebarItems = _sidebarItems;
+	/* Synthesize properties' accessors
+	@synthesize sidebarItems = _sidebarItems; */
 
 	/* initWithWindow method */
 	- (id) initWithWindow: (NSWindow *)window {
 		self = [super initWithWindow: window];
-/*		if (self) {
+		if (self) {
 			// Initialization code here.
+			/*
 			_sidebarItems = [NSArray arrayWithObjects:
 							    [NSDictionary dictionaryWithObjectsAndKeys: @"BUZZ!", @"title",
 							        [NSArray arrayWithObjects:
@@ -41,15 +42,16 @@
 							        @"children",
 							        [NSNumber numberWithBool: YES], @"header",
 							        nil],
-							nil];
+							nil]; */
 		}
-*/		return self;
+		return self;
 	}
 
-	// windowDidLoad method
+	/* windowDidLoad method */
 	- (void) windowDidLoad {
 		[super windowDidLoad];
-		// Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+		/* Implement this method to handle any initialization after your window controller's window
+		   has been loaded from its nib file. */
 	}
 
 @end
