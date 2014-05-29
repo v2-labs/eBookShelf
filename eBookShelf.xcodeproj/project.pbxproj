@@ -21,6 +21,7 @@
 		CFA5B6B2188E0B240093CA7B /* database.c in Sources */ = {isa = PBXBuildFile; fileRef = CFA5B6AB188DD8440093CA7B /* database.c */; };
 		CFB4698F1931116F00B91B2C /* V2BSMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF22B00918923159008DC6D5 /* V2BSMainWindowController.m */; };
 		CFB469971932CAAA00B91B2C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB469951932CAAA00B91B2C /* MainWindow.xib */; };
+		CFB469991933C36700B91B2C /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB469981933C36700B91B2C /* Quartz.framework */; };
 		CFF28C771634285F00CA27D1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF28C741634272900CA27D1 /* Security.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +56,6 @@
 		CF0BC1EB1780E6EE00203FFE /* eBookShelf.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = eBookShelf.entitlements; sourceTree = "<group>"; };
 		CF0BC1ED1780E6EE00203FFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		CF0BC1EF1780E6EE00203FFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CF0BC1F11780E6EE00203FFE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		CF0BC1F31780E6EE00203FFE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/V2BSDocument.xib; sourceTree = "<group>"; };
 		CF0BC1F41780E6EE00203FFE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CF0BC2671780EDFE00203FFE /* DropboxOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxOSX.framework; path = "MacOS X/Frameworks/DropboxOSX.framework"; sourceTree = "<group>"; };
 		CF22B00818923159008DC6D5 /* V2BSMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2BSMainWindowController.h; sourceTree = "<group>"; };
@@ -75,7 +74,10 @@
 		CFA5B6AC188DD8440093CA7B /* database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = database.h; path = common/database.h; sourceTree = "<group>"; };
 		CFA5B6AE188DFEDB0093CA7B /* sha1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = common/sha1.h; sourceTree = "<group>"; };
 		CFA5B6AF188E027E0093CA7B /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sha1.c; path = common/sha1.c; sourceTree = "<group>"; };
-		CFB469961932CAAA00B91B2C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		CFB469981933C36700B91B2C /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		CFB4699A1933C46B00B91B2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CFB4699B1933C46B00B91B2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/V2BSDocument.xib; sourceTree = "<group>"; };
+		CFB4699C1933C46B00B91B2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		CFF28C741634272900CA27D1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 			files = (
 				CFA5B6A8188CD1B20093CA7B /* eBookShelfLib.a in Frameworks */,
 				CFA2FB15148D0CA7000540DB /* Cocoa.framework in Frameworks */,
+				CFB469991933C36700B91B2C /* Quartz.framework in Frameworks */,
 				CFF28C771634285F00CA27D1 /* Security.framework in Frameworks */,
 				CF0BC2DE1780F97300203FFE /* DropboxOSX.framework in Frameworks */,
 			);
@@ -202,8 +205,9 @@
 		CFA2FB16148D0CA7000540DB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CF0BC2671780EDFE00203FFE /* DropboxOSX.framework */,
+				CFB469981933C36700B91B2C /* Quartz.framework */,
 				CFF28C741634272900CA27D1 /* Security.framework */,
+				CF0BC2671780EDFE00203FFE /* DropboxOSX.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
@@ -284,6 +288,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CFA2FB05148D0CA6000540DB;
 			productRefGroup = CFA2FB11148D0CA7000540DB /* Products */;
@@ -378,7 +383,7 @@
 		CF0BC1F01780E6EE00203FFE /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CF0BC1F11780E6EE00203FFE /* en */,
+				CFB4699A1933C46B00B91B2C /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -386,7 +391,7 @@
 		CF0BC1F21780E6EE00203FFE /* V2BSDocument.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CF0BC1F31780E6EE00203FFE /* en */,
+				CFB4699B1933C46B00B91B2C /* Base */,
 			);
 			name = V2BSDocument.xib;
 			sourceTree = "<group>";
@@ -394,7 +399,7 @@
 		CFB469951932CAAA00B91B2C /* MainWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CFB469961932CAAA00B91B2C /* en */,
+				CFB4699C1933C46B00B91B2C /* Base */,
 			);
 			name = MainWindow.xib;
 			sourceTree = "<group>";
