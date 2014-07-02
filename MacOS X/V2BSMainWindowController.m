@@ -1,6 +1,6 @@
 //
-//  V2BSMainWindowController.m
 //  eBookShelf
+//  V2BSMainWindowController.m
 //
 //  Created by Juvenal A. Silva Jr. on 1/24/14.
 //  Copyright (c) 2014 v2 lab. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import "V2BSMainWindowController.h"
 
-@interface V2BSMainWindowController ()
-	/* Define private properties
-	@property (nonatomic, strong) NSArray *sidebarItems; */
-
-@end
+//@interface V2BSMainWindowController ()
+//	/* Define private properties */
+//	@property (nonatomic, strong) NSArray *sidebarItems;
+//
+//@end
 
 
 @implementation V2BSMainWindowController
@@ -47,8 +47,8 @@
 		return self;
 	}
 
-	/* windowDidLoad method */
-	- (void) windowDidLoad {
+	// windowDidLoad method
+	-(void) windowDidLoad {
 		[super windowDidLoad];
 		/* Implement this method to handle any initialization after your window controller's window
 		   has been loaded from its nib file. */

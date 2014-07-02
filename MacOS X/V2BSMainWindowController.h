@@ -1,6 +1,6 @@
 //
-//  V2BSMainWindowController.h
 //  eBookShelf
+//  V2BSMainWindowController.h
 //
 //  Created by Juvenal A. Silva Jr. on 1/24/14.
 //  Copyright (c) 2014 v2 lab. All rights reserved.
@@ -13,3 +13,4 @@
 	@property (retain) IBOutlet NSButton *okButton;
 
 @end
+

@@ -1,6 +1,6 @@
 /*
- * V2BSDocument.h
  * eBookShelf
+ * V2BSDocument.h
  *
  * Created by Juvenal A. Silva Jr. <juvenal.silva@mac.com>
  * Copyright (c) 2014 v2 labs. All rights reserved
@@ -35,6 +35,6 @@
  *
  *
  */
-@interface V2BSDocument : NSDocument
+@interface V2BSDocument: NSDocument
 
 @end
