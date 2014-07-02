@@ -35,7 +35,7 @@
 		// Insert code here to initialize your application
 		V2BSMainWindowController *windowController;
 		windowController = [[V2BSMainWindowController alloc] initWithWindowNibName: @"MainWindow"];
-		[windowController showWindow: nil];
+		[windowController showWindow: self];
 		self.mainWindow = windowController;
 	}
 
