@@ -7,6 +7,7 @@
 //
 
 #import "V2BSMainWindowController.h"
+#import "V2BSMainLibraryToolbarDelegate.h"
 
 //@interface V2BSMainWindowController ()
 //	/* Define private properties */
@@ -18,13 +19,31 @@
 @implementation V2BSMainWindowController
 	/* Synthesize properties' accessors
 	@synthesize sidebarItems = _sidebarItems; */
+	@synthesize toolbar = _toolbar;
+	@synthesize sidebar = _sidebar;
 
-	/* initWithWindow method */
-	- (id) initWithWindow: (NSWindow *)window {
+	// awakeFromNib method
+	-(void) awakeFromNib
+	{
+		// Init the library toolbar delegate to use
+		V2BSMainLibraryToolbarDelegate *libraryToolbarDelegate = [[V2BSMainLibraryToolbarDelegate alloc] init];
+		// Proceed with toolbar creation
+		NSToolbar *toolbar = [[NSToolbar alloc] initWithIdentifier: @"mainLibraryToolbar"];
+		[toolbar setDisplayMode: NSToolbarDisplayModeIconAndLabel];
+		[toolbar setAllowsUserCustomization: YES];
+		[toolbar setAutosavesConfiguration: YES];
+		[toolbar setDelegate: libraryToolbarDelegate];
+		// Attach toolbar to main library window
+		[self.window setToolbar: toolbar];
+	}
+
+	/* initWithWindow method
+	-(id) initWithWindow: (NSWindow *)window
+	{
 		self = [super initWithWindow: window];
 		if (self) {
 			// Initialization code here.
-			/*
+			//
 			_sidebarItems = [NSArray arrayWithObjects:
 							    [NSDictionary dictionaryWithObjectsAndKeys: @"BUZZ!", @"title",
 							        [NSArray arrayWithObjects:
@@ -42,9 +61,10 @@
 							        @"children",
 							        [NSNumber numberWithBool: YES], @"header",
 							        nil],
-							nil]; */
+							nil];
 		}
 		return self;
+	} */
 	}
 
 	// windowDidLoad method

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6154.17"/>
+        <deployment defaultVersion="1070" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner"/>
-        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
-        <customObject id="8Se-ru-s9G" userLabel="Main Window" customClass="V2BSMainWindowController">
+        <customObject id="-2" userLabel="File's Owner" customClass="V2BSMainWindowController">
             <connections>
-                <outlet property="window" destination="hyO-93-1bK" id="vTk-d3-ExV"/>
+                <outlet property="window" destination="hyO-93-1bK" id="D1D-Hp-M7S"/>
             </connections>
         </customObject>
-        <window title="Library" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="hyO-93-1bK" userLabel="Main Window">
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Library" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="hyO-93-1bK" userLabel="Main Window">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" unifiedTitleAndToolbar="YES"/>
             <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
             <rect key="contentRect" x="40" y="321" width="640" height="420"/>
@@ -21,23 +21,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="640" height="420"/>
                 <autoresizingMask key="autoresizingMask"/>
             </view>
-            <toolbar key="toolbar" implicitIdentifier="178868DA-1E1D-41F0-A3D1-F15D0A6BF33B" displayMode="iconOnly" sizeMode="small" id="6C3-U6-bIt">
-                <allowedToolbarItems>
-                    <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="CRW-bG-TdB"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="j2p-cv-kKJ"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="6XE-rJ-xKf"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="HQi-u7-dQz"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="jqN-g5-sks"/>
-                </allowedToolbarItems>
-                <defaultToolbarItems>
-                    <toolbarItem reference="CRW-bG-TdB"/>
-                    <toolbarItem reference="j2p-cv-kKJ"/>
-                    <toolbarItem reference="jqN-g5-sks"/>
-                    <toolbarItem reference="6XE-rJ-xKf"/>
-                </defaultToolbarItems>
-            </toolbar>
+            <contentBorderThickness minY="22"/>
             <connections>
-                <outlet property="delegate" destination="-2" id="w9e-4C-n3w"/>
+                <outlet property="delegate" destination="-2" id="c28-F6-iES"/>
             </connections>
         </window>
     </objects>
