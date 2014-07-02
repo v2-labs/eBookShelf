@@ -9,8 +9,9 @@
 #import <Cocoa/Cocoa.h>
 #import <Quartz/Quartz.h>
 
-@interface V2BSMainWindowController : NSWindowController
-	@property (retain) IBOutlet NSButton *okButton;
+@interface V2BSMainWindowController: NSWindowController
+	@property (retain) IBOutlet NSToolbar     *toolbar;
+	@property (retain) IBOutlet NSOutlineView *sidebar;
 
 @end
 

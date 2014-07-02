@@ -65,6 +65,12 @@
 		}
 		return self;
 	} */
+
+	// windowWillLoad method
+	-(void) windowWillLoad {
+		[super windowWillLoad];
+		/* Implement this method to handle any initialization before your window controller's window
+		   has been loaded from its nib file. */
 	}
 
 	// windowDidLoad method
