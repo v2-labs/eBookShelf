@@ -8,6 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface V2BSBookViewManager : NSDocument
+@interface V2BSBookViewManager: NSDocument
 
 @end

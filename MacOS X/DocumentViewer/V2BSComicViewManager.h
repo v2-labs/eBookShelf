@@ -8,6 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface V2BSComicViewManager : NSDocument
+@interface V2BSComicViewManager: NSDocument
 
 @end
