@@ -7,7 +7,7 @@
 //
 
 #import "V2BSMainLibraryToolbarDelegate.h"
-#import "V2BSMainWindowCOntroller.h"
+#import "V2BSMainWindowController.h"
 
 @interface V2BSMainLibraryToolbarDelegate()
 	// Set delegate private properties
