@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 v2 lab. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <Cocoa/Cocoa.h>
 
 @interface V2BSDataCbzDecode: NSObject
 
