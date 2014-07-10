@@ -52,12 +52,12 @@
 
 #include "sha1.h"
 
-// Define the circular shift macro
+/* Define the circular shift macro */
 #define SHA1CircularShift(bits, word) \
 			((((word) << (bits)) & 0xFFFFFFFF) | \
 			((word) >> (32-(bits))))
 
-// Internal function prototypes
+/* Internal function prototypes */
 void SHA1ProcessMessageBlock(SHA1Context *);
 void SHA1PadMessage(SHA1Context *);
 
@@ -113,16 +113,16 @@ void SHA1Reset(SHA1Context *context) {
  *
  */
 int SHA1Result(SHA1Context *context) {
-	// If context is corrupted, fail
+	/* If context is corrupted, fail */
     if (context->Corrupted) {
         return 1;
     }
-	// Flag it as completed if not yet and pad it
+	/* Flag it as completed if not yet and pad it */
     if (!context->Computed) {
         SHA1PadMessage(context);
         context->Computed = 1;
     }
-	// Return successfull completion
+	/* Return successfull completion */
     return 0;
 }
 
@@ -163,14 +163,14 @@ void SHA1Input(SHA1Context *context, const unsigned char *message_array, unsigne
         context->Message_Block[context->Message_Block_Index++] = (*message_array & 0xFF);
 
         context->Length_Low += 8;
-        // Force it to 32 bits
+        /* Force it to 32 bits */
         context->Length_Low &= 0xFFFFFFFF;
         if (context->Length_Low == 0) {
             context->Length_High++;
-            // Force it to 32 bits
+            /* Force it to 32 bits */
             context->Length_High &= 0xFFFFFFFF;
             if (context->Length_High == 0) {
-                // Message is too long
+                /* Message is too long */
                 context->Corrupted = 1;
             }
         }
@@ -208,10 +208,10 @@ void SHA1Input(SHA1Context *context, const unsigned char *message_array, unsigne
  *
  */
 void SHA1PadMessage(SHA1Context *context) {
-    // Check to see if the current message block is too small to hold
-    // the initial padding bits and length.  If so, we will pad the
-    // block, process it, and then continue padding into a second
-    // block.
+    /* Check to see if the current message block is too small to hold */
+    /* the initial padding bits and length.  If so, we will pad the   */
+    /* block, process it, and then continue padding into a second     */
+    /* block.                                                         */
     if (context->Message_Block_Index > 55) {
         context->Message_Block[context->Message_Block_Index++] = 0x80;
         while (context->Message_Block_Index < 64) {
@@ -230,7 +230,7 @@ void SHA1PadMessage(SHA1Context *context) {
         }
     }
 
-    // Store the message length as the last 8 octets
+    /* Store the message length as the last 8 octets */
     context->Message_Block[56] = (context->Length_High >> 24) & 0xFF;
     context->Message_Block[57] = (context->Length_High >> 16) & 0xFF;
     context->Message_Block[58] = (context->Length_High >> 8) & 0xFF;
@@ -265,16 +265,16 @@ void SHA1PadMessage(SHA1Context *context) {
  *
  */
 void SHA1ProcessMessageBlock(SHA1Context *context) {
-    const unsigned int K[] = {0x5A827999, // Constants defined in SHA-1
+    const unsigned int K[] = {0x5A827999, /* Constants defined in SHA-1 */
 							  0x6ED9EBA1,
 							  0x8F1BBCDC,
 							  0xCA62C1D6};
-    int          t;                       // Loop counter
-    unsigned int temp;                    // Temporary word value
-    unsigned int W[80];                   // Word sequence
-    unsigned int A, B, C, D, E;           // Word buffers
+    int          t;                       /* Loop counter */
+    unsigned int temp;                    /* Temporary word value */
+    unsigned int W[80];                   /* Word sequence */
+    unsigned int A, B, C, D, E;           /* Word buffers */
 
-	// Initialize the first 16 words in the array W
+	/* Initialize the first 16 words in the array W */
     for (t = 0; t < 16; t++) {
         W[t]  = ((unsigned int) context->Message_Block[t * 4]) << 24;
         W[t] |= ((unsigned int) context->Message_Block[t * 4 + 1]) << 16;

@@ -10,7 +10,6 @@
 #import <Quartz/Quartz.h>
 
 @interface V2BSMainWindowController: NSWindowController
-	@property (retain) IBOutlet NSToolbar     *toolbar;
 	@property (retain) IBOutlet NSOutlineView *sidebar;
 
 @end

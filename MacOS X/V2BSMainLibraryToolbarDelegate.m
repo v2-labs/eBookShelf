@@ -7,6 +7,7 @@
 //
 
 #import "V2BSMainLibraryToolbarDelegate.h"
+#import "V2BSMainWindowCOntroller.h"
 
 @interface V2BSMainLibraryToolbarDelegate()
 	// Set delegate private properties
@@ -28,26 +29,31 @@
 								  @"newSmartCollection",
 								  @"setPreferences",
 								  @"openInfo"];
-			self.toolbarItems = @{@"newShelf" :           @[@"New Shelf",
-															@"New Shelf",
-															@"Creates a new shelf",
-															@"NSFolder"],
-								  @"newCollection" :      @[@"New Collection",
-															@"New Collection",
-															@"Creates a new collection",
-															@"NSMultipleDocuments"],
-								  @"newSmartCollection" : @[@"Smart Collection",
-															@"Smart Collection",
-															@"Creates a new smart collection",
-															@"NSFolderSmart"],
-								  @"setPreferences" :     @[@"Preferences",
-															@"Preferences",
-															@"Open the preferences pane settings",
-															@"NSPreferencesGeneral"],
-								  @"openInfo" :           @[@"Open Info",
-															@"Open Info",
-															@"Open selected item info pane",
-															@"NSInfo"]};
+
+			self.toolbarItems = @{@"newShelf":            @{@"label":    @"New Shelf",
+															@"pallete":  @"New Shelf",
+															@"tooltip":  @"Creates a new shelf",
+															@"image":    @"NSFolder"},
+
+								  @"newCollection":       @{@"label":    @"New Collection",
+															@"pallete":  @"New Collection",
+															@"tooltip":  @"Creates a new collection",
+															@"image":    @"NSMultipleDocuments"},
+
+								  @"newSmartCollection":  @{@"label":    @"Smart Collection",
+															@"pallete":  @"Smart Collection",
+															@"tooltip":  @"Creates a new smart collection",
+															@"image":    @"NSFolderSmart"},
+
+								  @"setPreferences":      @{@"label":    @"Preferences",
+															@"pallete":  @"Preferences",
+															@"tooltip":  @"Open the preferences pane settings",
+															@"image":    @"NSPreferencesGeneral"},
+
+								  @"openInfo":            @{@"label":    @"Open Info",
+															@"pallete":  @"Open Info",
+															@"tooltip":  @"Open selected item info pane",
+															@"image":    @"NSInfo"}};
 		}
 		return self;
 	}
@@ -60,12 +66,12 @@
 		NSToolbarItem *toolbarItem = nil;
 		for (id tbItem in self.toolbarNames) {
 			if ([itemIdent isEqual: tbItem]) {
-				NSArray *tbItemData = self.toolbarItems[tbItem];
+				NSDictionary *tbItemData = self.toolbarItems[tbItem];
 				toolbarItem = [[NSToolbarItem alloc] initWithItemIdentifier: tbItem];
-				[toolbarItem setLabel: tbItemData[0]];
-				[toolbarItem setPaletteLabel: tbItemData[1]];
-				[toolbarItem setToolTip: tbItemData[2]];
-				[toolbarItem setImage: [NSImage imageNamed: tbItemData[3]]];
+				[toolbarItem setLabel: tbItemData[@"label"]];
+				[toolbarItem setPaletteLabel: tbItemData[@"pallete"]];
+				[toolbarItem setToolTip: tbItemData[@"tooltip"]];
+				[toolbarItem setImage: [NSImage imageNamed: tbItemData[@"image"]]];
 				break;
 			}
 		}

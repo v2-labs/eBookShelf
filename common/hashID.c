@@ -41,19 +41,19 @@ char *findHashOfFile(char *result, const char *pathname) {
 	FILE          *fp;
 	unsigned char c;
 
-	// Open given pathname for binary reading
+	/* Open given pathname for binary reading */
 	if (!(fp = fopen(pathname, "rb"))) {
 		return NULL;
 	}
-	// Reset SHA-1 context and process input
+	/* Reset SHA-1 context and process input */
 	SHA1Reset(&sha);
-	// Walk thru the file calculating hash
+	/* Walk thru the file calculating hash */
 	c = fgetc(fp);
 	while (!feof(fp)) {
 		SHA1Input(&sha, &c, 1);
 		c =fgetc(fp);
 	}
-	// Check proper result and fill it to return
+	/* Check proper result and fill it to return */
 	if (SHA1Result(&sha) != 0) {
 		return NULL;
 	}
@@ -85,16 +85,16 @@ char *checkHashOfFile(char *result, const char *pathname, const char *checkHash)
 	hashFound = (char *)malloc((size_t)HASH_SIZE);
 	findHashOfFile(hashFound, pathname);
 	if (strlen(hashFound) == 0) {
-		// Prepare return to log error on hash calculation
+		/* Prepare return to log error on hash calculation */
 		strncpy(result, "FAIL1", 6);
 	}
 	else {
 		if (strncmp(hashFound, checkHash, HASH_SIZE) != 0) {
-			// Prepare return to inform hash doesn't match
+			/* Prepare return to inform hash doesn't match */
 			strncpy(result, "FAIL2", 6);
 		}
 		else {
-			// Prepare return to inform that hashes match
+			/* Prepare return to inform that hashes match */
 			strncpy(result, "SUCCESS", 8);
 		}
 	}

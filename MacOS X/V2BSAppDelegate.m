@@ -29,23 +29,24 @@
 @implementation V2BSAppDelegate
 	@synthesize mainWindow;
 
-	// Implement your own initialization steps after application launch
+	/* Implement your own initialization steps after application launch */
 	-(void) applicationDidFinishLaunching: (NSNotification *) aNotification
 	{
-		// Insert code here to initialize your application
+		/* Insert code here to initialize your application */
 		V2BSMainWindowController *windowController;
-		windowController = [[V2BSMainWindowController alloc] initWithWindowNibName: @"MainWindow"];
+		windowController = [[V2BSMainWindowController alloc]
+							initWithWindowNibName: @"V2BSMainWindowController"];
 		[windowController showWindow: self];
 		self.mainWindow = windowController;
 	}
 
-	// Implement your own finalization steps before application finishes
+	/* Implement your own finalization steps before application finishes */
 	-(void) applicationWillTerminate: (NSNotification *) aNotification
 	{
 		/* Insert code here to finalize your application */
 	}
 
-	// Implement method definition for newBookShelf
+	/* Implement method definition for newBookShelf */
 	-(IBAction) newBookShelf: (id) sender
 	{
 		/* ... */

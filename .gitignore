@@ -22,4 +22,5 @@ CVS
 
 # Generic noise
 *~
+*.bak
 *.sw[op]

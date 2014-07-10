@@ -19,7 +19,6 @@
 @implementation V2BSMainWindowController
 	/* Synthesize properties' accessors
 	@synthesize sidebarItems = _sidebarItems; */
-	@synthesize toolbar = _toolbar;
 	@synthesize sidebar = _sidebar;
 
 	// awakeFromNib method
@@ -28,7 +27,8 @@
 		// Init the library toolbar delegate to use
 		V2BSMainLibraryToolbarDelegate *libraryToolbarDelegate = [[V2BSMainLibraryToolbarDelegate alloc] init];
 		// Proceed with toolbar creation
-		NSToolbar *toolbar = [[NSToolbar alloc] initWithIdentifier: @"mainLibraryToolbar"];
+		NSToolbar *toolbar = [[NSToolbar alloc]
+							  initWithIdentifier: @"mainLibraryToolbar"];
 		[toolbar setDisplayMode: NSToolbarDisplayModeIconAndLabel];
 		[toolbar setAllowsUserCustomization: YES];
 		[toolbar setAutosavesConfiguration: YES];
