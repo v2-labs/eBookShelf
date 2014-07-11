@@ -30,6 +30,7 @@
 		NSToolbar *toolbar = [[NSToolbar alloc]
 							  initWithIdentifier: @"mainLibraryToolbar"];
 		[toolbar setDisplayMode: NSToolbarDisplayModeIconAndLabel];
+		[toolbar setSizeMode: NSToolbarSizeModeSmall];
 		[toolbar setAllowsUserCustomization: YES];
 		[toolbar setAutosavesConfiguration: YES];
 		[toolbar setDelegate: libraryToolbarDelegate];

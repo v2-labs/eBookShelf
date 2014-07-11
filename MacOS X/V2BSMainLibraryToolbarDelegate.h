@@ -12,8 +12,8 @@
 
 	// NSToolbarDelegate protocol methods
 	-(NSToolbarItem *) toolbar: (NSToolbar *) toolbar
-		  itemForItemIdentifier: (NSString *) itemIdentifier
-	  willBeInsertedIntoToolbar: (BOOL) flag;
+		 itemForItemIdentifier: (NSString *) itemIdentifier
+	 willBeInsertedIntoToolbar: (BOOL) flag;
 
 	-(NSArray *) toolbarAllowedItemIdentifiers: (NSToolbar *) toolbar;
 
