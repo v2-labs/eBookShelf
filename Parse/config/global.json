@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "_default": {
+            "link": "ebookshelf"
+        }, 
+        "ebookshelf": {
+            "applicationId": "ot8WvQ5GivrIwsPxTCYkqa2hGutbYmVarSso1WYh", 
+            "masterKey": "ZSMZ00q5iTxyb1cqifgBnxPwKKBHGW2OcST5F45U"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.19"
+    }
+}
