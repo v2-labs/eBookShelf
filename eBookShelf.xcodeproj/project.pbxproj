@@ -11,6 +11,15 @@
 		CF0BC1FA1780E6EE00203FFE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0BC1F01780E6EE00203FFE /* MainMenu.xib */; };
 		CF0BC1FC1780E6EE00203FFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0BC1F41780E6EE00203FFE /* main.m */; };
 		CF0BC2DE1780F97300203FFE /* DropboxOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0BC2671780EDFE00203FFE /* DropboxOSX.framework */; };
+		CF0BC8FE19738F6700340B0A /* ParseOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0BC8FD19738F6700340B0A /* ParseOSX.framework */; };
+		CF0BC90019738FBB00340B0A /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0BC8FF19738FBB00340B0A /* ApplicationServices.framework */; };
+		CF0BC90219738FDA00340B0A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0BC90119738FDA00340B0A /* CFNetwork.framework */; };
+		CF0BC9041973900E00340B0A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0BC9031973900E00340B0A /* CoreGraphics.framework */; };
+		CF0BC9061973903000340B0A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0BC9051973902F00340B0A /* CoreLocation.framework */; };
+		CF0BC9081973904D00340B0A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0BC9071973904D00340B0A /* SystemConfiguration.framework */; };
+		CF0BC90A1973906800340B0A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0BC9091973906800340B0A /* libsqlite3.dylib */; };
+		CF0BC90C1973909A00340B0A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0BC90B1973909A00340B0A /* libz.dylib */; };
+		CF0BC90E1973942400340B0A /* ParseOSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF0BC8FD19738F6700340B0A /* ParseOSX.framework */; };
 		CF3FC0BC19675C8F00336536 /* V2BSBookViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3FC0BA19675C8F00336536 /* V2BSBookViewManager.m */; };
 		CF3FC0C119675CBE00336536 /* V2BSComicViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3FC0BF19675CBE00336536 /* V2BSComicViewManager.m */; };
 		CF3FC0C5196776F400336536 /* V2BSDataPDFDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3FC0C4196776F400336536 /* V2BSDataPDFDecode.m */; };
@@ -59,6 +68,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				CF0BC90E1973942400340B0A /* ParseOSX.framework in CopyFiles */,
 				CF84623517811F2400E75927 /* DropboxOSX.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,6 +83,14 @@
 		CF0BC1EF1780E6EE00203FFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CF0BC1F41780E6EE00203FFE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CF0BC2671780EDFE00203FFE /* DropboxOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxOSX.framework; path = "MacOS X/Frameworks/DropboxOSX.framework"; sourceTree = SOURCE_ROOT; };
+		CF0BC8FD19738F6700340B0A /* ParseOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseOSX.framework; path = "MacOS X/Frameworks/ParseOSX.framework"; sourceTree = "<group>"; };
+		CF0BC8FF19738FBB00340B0A /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		CF0BC90119738FDA00340B0A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CF0BC9031973900E00340B0A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CF0BC9051973902F00340B0A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CF0BC9071973904D00340B0A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CF0BC9091973906800340B0A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		CF0BC90B1973909A00340B0A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		CF22B00818923159008DC6D5 /* V2BSMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2BSMainWindowController.h; sourceTree = "<group>"; };
 		CF22B00918923159008DC6D5 /* V2BSMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V2BSMainWindowController.m; sourceTree = "<group>"; };
 		CF354618193E489B006CE357 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -138,11 +156,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF0BC90C1973909A00340B0A /* libz.dylib in Frameworks */,
+				CF0BC90A1973906800340B0A /* libsqlite3.dylib in Frameworks */,
+				CF0BC9081973904D00340B0A /* SystemConfiguration.framework in Frameworks */,
+				CF0BC9061973903000340B0A /* CoreLocation.framework in Frameworks */,
+				CF0BC9041973900E00340B0A /* CoreGraphics.framework in Frameworks */,
+				CF0BC90219738FDA00340B0A /* CFNetwork.framework in Frameworks */,
+				CF0BC90019738FBB00340B0A /* ApplicationServices.framework in Frameworks */,
 				CFA5B6A8188CD1B20093CA7B /* eBookShelfLib.a in Frameworks */,
 				CFA2FB15148D0CA7000540DB /* Cocoa.framework in Frameworks */,
 				CFB469991933C36700B91B2C /* Quartz.framework in Frameworks */,
 				CFF28C771634285F00CA27D1 /* Security.framework in Frameworks */,
 				CF0BC2DE1780F97300203FFE /* DropboxOSX.framework in Frameworks */,
+				CF0BC8FE19738F6700340B0A /* ParseOSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +199,15 @@
 				CF0BC1E91780E6EE00203FFE /* eBookShelf-Info.plist */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		CF0BC90D197390B000340B0A /* System Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				CF0BC90B1973909A00340B0A /* libz.dylib */,
+				CF0BC9091973906800340B0A /* libsqlite3.dylib */,
+			);
+			name = "System Libraries";
 			sourceTree = "<group>";
 		};
 		CF3B005518E9A23100B9D4F3 /* DocumentViewer */ = {
@@ -287,7 +322,13 @@
 				CFA2FB19148D0CA7000540DB /* Foundation.framework */,
 				CFA2FB17148D0CA7000540DB /* AppKit.framework */,
 				CFB469981933C36700B91B2C /* Quartz.framework */,
+				CF0BC90119738FDA00340B0A /* CFNetwork.framework */,
+				CF0BC9031973900E00340B0A /* CoreGraphics.framework */,
+				CF0BC9051973902F00340B0A /* CoreLocation.framework */,
+				CF0BC9071973904D00340B0A /* SystemConfiguration.framework */,
+				CF0BC8FF19738FBB00340B0A /* ApplicationServices.framework */,
 				CFF28C741634272900CA27D1 /* Security.framework */,
+				CF0BC90D197390B000340B0A /* System Libraries */,
 				CFA2FB16148D0CA7000540DB /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -297,6 +338,7 @@
 		CFA2FB16148D0CA7000540DB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CF0BC8FD19738F6700340B0A /* ParseOSX.framework */,
 				CF0BC2671780EDFE00203FFE /* DropboxOSX.framework */,
 			);
 			name = "Other Frameworks";
@@ -423,7 +465,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#LOCATION=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\n#IDENTITY=\"Developer ID Application: Juvenal Silva\"\n#for framework in DropboxOSX; do\n#    codesign --verbose --force --sign \"${IDENTITY}\" \"${LOCATION}/${framework}.framework/Versions/A\"\n#done";
+			shellScript = "#LOCATION=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\n#IDENTITY=\"Developer ID Application: Juvenal Silva\"\n#for framework in DropboxOSX ParseOSX; do\n#    codesign --verbose --force --sign \"${IDENTITY}\" \"${LOCATION}/${framework}.framework/Versions/A\"\n#done";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -653,6 +695,8 @@
 					"$(inherited)",
 					"$(SRCROOT)",
 					"$(SRCROOT)/MacOS\\ X/Frameworks",
+					"$(PROJECT_DIR)/MacOS",
+					X/Frameworks,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacOS X/eBookShelf-Prefix.pch";
@@ -676,6 +720,8 @@
 					"$(inherited)",
 					"$(SRCROOT)",
 					"$(SRCROOT)/MacOS\\ X/Frameworks",
+					"$(PROJECT_DIR)/MacOS",
+					X/Frameworks,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacOS X/eBookShelf-Prefix.pch";
