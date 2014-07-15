@@ -82,8 +82,8 @@
 		CF0BC1ED1780E6EE00203FFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		CF0BC1EF1780E6EE00203FFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CF0BC1F41780E6EE00203FFE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CF0BC2671780EDFE00203FFE /* DropboxOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxOSX.framework; path = "MacOS X/Frameworks/DropboxOSX.framework"; sourceTree = SOURCE_ROOT; };
-		CF0BC8FD19738F6700340B0A /* ParseOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseOSX.framework; path = "MacOS X/Frameworks/ParseOSX.framework"; sourceTree = "<group>"; };
+		CF0BC2671780EDFE00203FFE /* DropboxOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxOSX.framework; path = OSX/Frameworks/DropboxOSX.framework; sourceTree = SOURCE_ROOT; };
+		CF0BC8FD19738F6700340B0A /* ParseOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseOSX.framework; path = OSX/Frameworks/ParseOSX.framework; sourceTree = "<group>"; };
 		CF0BC8FF19738FBB00340B0A /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		CF0BC90119738FDA00340B0A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		CF0BC9031973900E00340B0A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -99,18 +99,18 @@
 		CF3FC0BA19675C8F00336536 /* V2BSBookViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V2BSBookViewManager.m; sourceTree = "<group>"; };
 		CF3FC0BE19675CBE00336536 /* V2BSComicViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2BSComicViewManager.h; sourceTree = "<group>"; };
 		CF3FC0BF19675CBE00336536 /* V2BSComicViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V2BSComicViewManager.m; sourceTree = "<group>"; };
-		CF3FC0C3196776F400336536 /* V2BSDataPDFDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = V2BSDataPDFDecode.h; path = "MacOS X/SupportedFormats/V2BSDataPDFDecode.h"; sourceTree = SOURCE_ROOT; };
-		CF3FC0C4196776F400336536 /* V2BSDataPDFDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = V2BSDataPDFDecode.m; path = "MacOS X/SupportedFormats/V2BSDataPDFDecode.m"; sourceTree = SOURCE_ROOT; };
-		CF3FC0C71967779C00336536 /* V2BSDataDjvueDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = V2BSDataDjvueDecode.h; path = "MacOS X/SupportedFormats/V2BSDataDjvueDecode.h"; sourceTree = SOURCE_ROOT; };
-		CF3FC0C81967779C00336536 /* V2BSDataDjvueDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = V2BSDataDjvueDecode.m; path = "MacOS X/SupportedFormats/V2BSDataDjvueDecode.m"; sourceTree = SOURCE_ROOT; };
-		CF3FC0CA196777D500336536 /* V2BSDataEPubDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = V2BSDataEPubDecode.h; path = "MacOS X/SupportedFormats/V2BSDataEPubDecode.h"; sourceTree = SOURCE_ROOT; };
-		CF3FC0CB196777D500336536 /* V2BSDataEPubDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = V2BSDataEPubDecode.m; path = "MacOS X/SupportedFormats/V2BSDataEPubDecode.m"; sourceTree = SOURCE_ROOT; };
-		CF3FC0CD1967780D00336536 /* V2BSDataChmDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = V2BSDataChmDecode.h; path = "MacOS X/SupportedFormats/V2BSDataChmDecode.h"; sourceTree = SOURCE_ROOT; };
-		CF3FC0CE1967780D00336536 /* V2BSDataChmDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = V2BSDataChmDecode.m; path = "MacOS X/SupportedFormats/V2BSDataChmDecode.m"; sourceTree = SOURCE_ROOT; };
-		CF3FC0D01967785800336536 /* V2BSDataCbrDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = V2BSDataCbrDecode.h; path = "MacOS X/SupportedFormats/V2BSDataCbrDecode.h"; sourceTree = SOURCE_ROOT; };
-		CF3FC0D11967785800336536 /* V2BSDataCbrDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = V2BSDataCbrDecode.m; path = "MacOS X/SupportedFormats/V2BSDataCbrDecode.m"; sourceTree = SOURCE_ROOT; };
-		CF3FC0D3196778A600336536 /* V2BSDataCbzDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = V2BSDataCbzDecode.h; path = "MacOS X/SupportedFormats/V2BSDataCbzDecode.h"; sourceTree = SOURCE_ROOT; };
-		CF3FC0D4196778A600336536 /* V2BSDataCbzDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = V2BSDataCbzDecode.m; path = "MacOS X/SupportedFormats/V2BSDataCbzDecode.m"; sourceTree = SOURCE_ROOT; };
+		CF3FC0C3196776F400336536 /* V2BSDataPDFDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2BSDataPDFDecode.h; sourceTree = "<group>"; };
+		CF3FC0C4196776F400336536 /* V2BSDataPDFDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V2BSDataPDFDecode.m; sourceTree = "<group>"; };
+		CF3FC0C71967779C00336536 /* V2BSDataDjvueDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2BSDataDjvueDecode.h; sourceTree = "<group>"; };
+		CF3FC0C81967779C00336536 /* V2BSDataDjvueDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V2BSDataDjvueDecode.m; sourceTree = "<group>"; };
+		CF3FC0CA196777D500336536 /* V2BSDataEPubDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2BSDataEPubDecode.h; sourceTree = "<group>"; };
+		CF3FC0CB196777D500336536 /* V2BSDataEPubDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V2BSDataEPubDecode.m; sourceTree = "<group>"; };
+		CF3FC0CD1967780D00336536 /* V2BSDataChmDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2BSDataChmDecode.h; sourceTree = "<group>"; };
+		CF3FC0CE1967780D00336536 /* V2BSDataChmDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V2BSDataChmDecode.m; sourceTree = "<group>"; };
+		CF3FC0D01967785800336536 /* V2BSDataCbrDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2BSDataCbrDecode.h; sourceTree = "<group>"; };
+		CF3FC0D11967785800336536 /* V2BSDataCbrDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V2BSDataCbrDecode.m; sourceTree = "<group>"; };
+		CF3FC0D3196778A600336536 /* V2BSDataCbzDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2BSDataCbzDecode.h; sourceTree = "<group>"; };
+		CF3FC0D4196778A600336536 /* V2BSDataCbzDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V2BSDataCbzDecode.m; sourceTree = "<group>"; };
 		CF3FC0D71968CA2D00336536 /* V2BSMainPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2BSMainPreferencesController.h; sourceTree = "<group>"; };
 		CF3FC0D81968CA2D00336536 /* V2BSMainPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V2BSMainPreferencesController.m; sourceTree = "<group>"; };
 		CF3FC0DD1968CDB100336536 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/V2BSMainPreferencesController.xib; sourceTree = "<group>"; };
@@ -118,10 +118,10 @@
 		CF3FC0E31968CFB300336536 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/V2BSComicViewManager.xib; sourceTree = "<group>"; };
 		CF3FC0E51968E2D800336536 /* V2BSPreferencesToolbarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2BSPreferencesToolbarDelegate.h; sourceTree = "<group>"; };
 		CF3FC0E61968E2D800336536 /* V2BSPreferencesToolbarDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V2BSPreferencesToolbarDelegate.m; sourceTree = "<group>"; };
-		CF3FC0EB196E41B400336536 /* V2BSHashIDWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = V2BSHashIDWrapper.h; path = CommonClasses/V2BSHashIDWrapper.h; sourceTree = "<group>"; };
-		CF3FC0EC196E41B400336536 /* V2BSHashIDWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = V2BSHashIDWrapper.m; path = CommonClasses/V2BSHashIDWrapper.m; sourceTree = "<group>"; };
-		CF3FC0EE196E4AC300336536 /* V2BSDatabaseWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = V2BSDatabaseWrapper.h; path = CommonClasses/V2BSDatabaseWrapper.h; sourceTree = "<group>"; };
-		CF3FC0EF196E4AC300336536 /* V2BSDatabaseWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = V2BSDatabaseWrapper.m; path = CommonClasses/V2BSDatabaseWrapper.m; sourceTree = "<group>"; };
+		CF3FC0EB196E41B400336536 /* V2BSHashIDWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2BSHashIDWrapper.h; sourceTree = "<group>"; };
+		CF3FC0EC196E41B400336536 /* V2BSHashIDWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V2BSHashIDWrapper.m; sourceTree = "<group>"; };
+		CF3FC0EE196E4AC300336536 /* V2BSDatabaseWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2BSDatabaseWrapper.h; sourceTree = "<group>"; };
+		CF3FC0EF196E4AC300336536 /* V2BSDatabaseWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V2BSDatabaseWrapper.m; sourceTree = "<group>"; };
 		CF3FC0F1196EBFFE00336536 /* V2BSDataIBookDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2BSDataIBookDecode.h; sourceTree = "<group>"; };
 		CF3FC0F2196EBFFE00336536 /* V2BSDataIBookDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V2BSDataIBookDecode.m; sourceTree = "<group>"; };
 		CF3FC12D1961A7FB00D353D1 /* V2BSMainLibraryToolbarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2BSMainLibraryToolbarDelegate.h; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CF0BC1E61780E6EE00203FFE /* MacOS X */ = {
+		CF0BC1E61780E6EE00203FFE /* OSX */ = {
 			isa = PBXGroup;
 			children = (
 				CF868CD91781468900C86D7A /* Images.xcassets */,
@@ -188,8 +188,8 @@
 				CF3FC0EA196E412800336536 /* CommonClasses */,
 				CFA2FB13148D0CA7000540DB /* Frameworks */,
 			);
-			path = "MacOS X";
-			sourceTree = "<group>";
+			path = OSX;
+			sourceTree = SOURCE_ROOT;
 		};
 		CF0BC2651780E8E700203FFE /* Main */ = {
 			isa = PBXGroup;
@@ -281,7 +281,7 @@
 				CF3FC0EB196E41B400336536 /* V2BSHashIDWrapper.h */,
 				CF3FC0EC196E41B400336536 /* V2BSHashIDWrapper.m */,
 			);
-			name = CommonClasses;
+			path = CommonClasses;
 			sourceTree = "<group>";
 		};
 		CF79B612178F41F60023538D /* Common */ = {
@@ -301,7 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				CF79B612178F41F60023538D /* Common */,
-				CF0BC1E61780E6EE00203FFE /* MacOS X */,
+				CF0BC1E61780E6EE00203FFE /* OSX */,
 				CFA2FB11148D0CA7000540DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -331,8 +331,7 @@
 				CF0BC90D197390B000340B0A /* System Libraries */,
 				CFA2FB16148D0CA7000540DB /* Other Frameworks */,
 			);
-			name = Frameworks;
-			path = ..;
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		CFA2FB16148D0CA7000540DB /* Other Frameworks */ = {
@@ -694,13 +693,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(SRCROOT)/MacOS\\ X/Frameworks",
-					"$(PROJECT_DIR)/MacOS",
-					X/Frameworks,
+					"$(SRCROOT)/OSX/Frameworks",
+					"$(PROJECT_DIR)/OSX/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MacOS X/eBookShelf-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/MacOS X/eBookShelf-Info.plist";
+				GCC_PREFIX_HEADER = "OSX/eBookShelf-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/OSX/eBookShelf-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CODE_SIGN_FLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -719,13 +717,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(SRCROOT)/MacOS\\ X/Frameworks",
-					"$(PROJECT_DIR)/MacOS",
-					X/Frameworks,
+					"$(SRCROOT)/OSX/Frameworks",
+					"$(PROJECT_DIR)/OSX/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MacOS X/eBookShelf-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/MacOS X/eBookShelf-Info.plist";
+				GCC_PREFIX_HEADER = "OSX/eBookShelf-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/OSX/eBookShelf-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CODE_SIGN_FLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
