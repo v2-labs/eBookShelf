@@ -82,7 +82,7 @@
 		CF0BC1ED1780E6EE00203FFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		CF0BC1EF1780E6EE00203FFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CF0BC1F41780E6EE00203FFE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CF0BC2671780EDFE00203FFE /* DropboxOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxOSX.framework; path = OSX/Frameworks/DropboxOSX.framework; sourceTree = SOURCE_ROOT; };
+		CF0BC2671780EDFE00203FFE /* DropboxOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxOSX.framework; path = OSX/Frameworks/DropboxOSX.framework; sourceTree = "<group>"; };
 		CF0BC8FD19738F6700340B0A /* ParseOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseOSX.framework; path = OSX/Frameworks/ParseOSX.framework; sourceTree = "<group>"; };
 		CF0BC8FF19738FBB00340B0A /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		CF0BC90119738FDA00340B0A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -337,8 +337,8 @@
 		CFA2FB16148D0CA7000540DB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CF0BC8FD19738F6700340B0A /* ParseOSX.framework */,
 				CF0BC2671780EDFE00203FFE /* DropboxOSX.framework */,
+				CF0BC8FD19738F6700340B0A /* ParseOSX.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = SOURCE_ROOT;

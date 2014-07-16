@@ -21,12 +21,16 @@
                 <rect key="frame" x="0.0" y="0.0" width="640" height="420"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <slider horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" placeholderIntrinsicWidth="90" placeholderIntrinsicHeight="15" translatesAutoresizingMaskIntoConstraints="NO" id="4QX-1E-cwr">
+                    <slider horizontalHuggingPriority="750" verticalHuggingPriority="750" placeholderIntrinsicWidth="92" placeholderIntrinsicHeight="15" translatesAutoresizingMaskIntoConstraints="NO" id="4QX-1E-cwr">
                         <rect key="frame" x="528" y="1" width="92" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <sliderCell key="cell" controlSize="small" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="vGy-VU-zfM"/>
                     </slider>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="4QX-1E-cwr" secondAttribute="bottom" constant="2" id="GES-SX-R69"/>
+                    <constraint firstAttribute="trailing" secondItem="4QX-1E-cwr" secondAttribute="trailing" constant="20" id="a2M-S1-X94"/>
+                </constraints>
             </view>
             <contentBorderThickness minY="22"/>
             <connections>
