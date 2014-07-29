@@ -24,6 +24,7 @@
  */
 
 #import <Cocoa/Cocoa.h>
+#import <ParseOSX/Parse.h>
 
 @class V2BSMainWindowController;
 @class V2BSBookShelf;
