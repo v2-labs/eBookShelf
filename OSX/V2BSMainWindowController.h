@@ -9,8 +9,12 @@
 #import <Cocoa/Cocoa.h>
 #import <Quartz/Quartz.h>
 
+@class V2BSMainLibraryToolbarDelegate;
+
 @interface V2BSMainWindowController: NSWindowController
+	@property (retain) V2BSMainLibraryToolbarDelegate *toolbarDelegate;
 	@property (retain) IBOutlet NSOutlineView *sidebar;
+    @property (nonatomic, strong) NSArray *sidebarItems;
 
 @end
 
