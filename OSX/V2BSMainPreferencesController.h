@@ -8,6 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface V2BSMainPreferencesController : NSWindowController
+@interface V2BSMainPreferencesController: NSWindowController
 
 @end

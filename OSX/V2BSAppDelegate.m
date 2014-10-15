@@ -32,11 +32,14 @@
 	/* Implement your own initialization steps after application launch */
 	-(void) applicationDidFinishLaunching: (NSNotification *) aNotification
 	{
-		/* Connect the application to the Parse remote counterpart */
-		[Parse setApplicationId:@"ot8WvQ5GivrIwsPxTCYkqa2hGutbYmVarSso1WYh"
-					  clientKey:@"xhe5InypBGr3bGikcbGwI1zdbanG7TLmvWCiAB9t"];
-		/* Track application usage statistics
-		[PFAnalytics trackAppOpenedWithLaunchOptions: launchOptions]; */
+		/* If Parse is active on App Preferences, set it up here */
+		if (0) {
+			/* Connect the application to the Parse remote counterpart */
+			[Parse setApplicationId:@"ot8WvQ5GivrIwsPxTCYkqa2hGutbYmVarSso1WYh"
+						  clientKey:@"xhe5InypBGr3bGikcbGwI1zdbanG7TLmvWCiAB9t"];
+			/* Track application usage statistics
+			[PFAnalytics trackAppOpenedWithLaunchOptions: launchOptions]; */
+		}
 		/* Set and create the Library Window Controller */
 		V2BSMainWindowController *windowController;
 		windowController = [[V2BSMainWindowController alloc]
