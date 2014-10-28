@@ -19,7 +19,7 @@
 		CF0BC9081973904D00340B0A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0BC9071973904D00340B0A /* SystemConfiguration.framework */; };
 		CF0BC90A1973906800340B0A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0BC9091973906800340B0A /* libsqlite3.dylib */; };
 		CF0BC90C1973909A00340B0A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0BC90B1973909A00340B0A /* libz.dylib */; };
-		CF0BC90E1973942400340B0A /* ParseOSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF0BC8FD19738F6700340B0A /* ParseOSX.framework */; };
+		CF0BC90E1973942400340B0A /* ParseOSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF0BC8FD19738F6700340B0A /* ParseOSX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CF3FC0BC19675C8F00336536 /* V2BSBookViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3FC0BA19675C8F00336536 /* V2BSBookViewManager.m */; };
 		CF3FC0C119675CBE00336536 /* V2BSComicViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3FC0BF19675CBE00336536 /* V2BSComicViewManager.m */; };
 		CF3FC0C5196776F400336536 /* V2BSDataPDFDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3FC0C4196776F400336536 /* V2BSDataPDFDecode.m */; };
@@ -156,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFA5B6A8188CD1B20093CA7B /* eBookShelfLib.a in Frameworks */,
 				CF0BC90C1973909A00340B0A /* libz.dylib in Frameworks */,
 				CF0BC90A1973906800340B0A /* libsqlite3.dylib in Frameworks */,
 				CF0BC9081973904D00340B0A /* SystemConfiguration.framework in Frameworks */,
@@ -163,7 +164,6 @@
 				CF0BC9041973900E00340B0A /* CoreGraphics.framework in Frameworks */,
 				CF0BC90219738FDA00340B0A /* CFNetwork.framework in Frameworks */,
 				CF0BC90019738FBB00340B0A /* ApplicationServices.framework in Frameworks */,
-				CFA5B6A8188CD1B20093CA7B /* eBookShelfLib.a in Frameworks */,
 				CFA2FB15148D0CA7000540DB /* Cocoa.framework in Frameworks */,
 				CFB469991933C36700B91B2C /* Quartz.framework in Frameworks */,
 				CFF28C771634285F00CA27D1 /* Security.framework in Frameworks */,
@@ -381,7 +381,6 @@
 				CFA2FB0D148D0CA7000540DB /* Frameworks */,
 				CFA2FB0E148D0CA7000540DB /* Resources */,
 				CF84623417811F1000E75927 /* CopyFiles */,
-				CFA5B6A3188955B10093CA7B /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -400,7 +399,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = V2BS;
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "v2 lab";
 				TargetAttributes = {
 					CFA2FB0F148D0CA7000540DB = {
@@ -450,23 +449,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		CFA5B6A3188955B10093CA7B /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#LOCATION=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\n#IDENTITY=\"Developer ID Application: Juvenal Silva\"\n#for framework in DropboxOSX ParseOSX; do\n#    codesign --verbose --force --sign \"${IDENTITY}\" \"${LOCATION}/${framework}.framework/Versions/A\"\n#done";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CF79B616178F458F0023538D /* Sources */ = {
