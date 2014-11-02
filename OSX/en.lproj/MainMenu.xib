@@ -69,13 +69,16 @@
                             <menuItem title="New Shelf" id="82" userLabel="New Shelf">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                             </menuItem>
-                            <menuItem title="New Collection" id="YIX-Sh-voG">
+                            <menuItem title="New Smart Shelf" id="62F-Em-eDW" userLabel="New Smart Shelf">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                             </menuItem>
                             <menuItem title="New Shelf from Selection" id="72" userLabel="New Shelf from Selection">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                             </menuItem>
-                            <menuItem title="New Smart Shelf" id="62F-Em-eDW" userLabel="New Smart Shelf">
+                            <menuItem title="New Collection" id="YIX-Sh-voG">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="New Collection from Selection" id="Vyg-eA-BPs" userLabel="New Shelf from Selection">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="79">
