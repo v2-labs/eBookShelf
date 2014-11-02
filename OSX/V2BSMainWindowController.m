@@ -7,58 +7,76 @@
 //
 
 #import "V2BSMainWindowController.h"
-#import "V2BSMainLibraryToolbarDelegate.h"
 
-//@interface V2BSMainWindowController ()
-//	/* Define private properties */
-//	@property (nonatomic, strong) NSArray *sidebarItems;
-//
-//@end
+@interface V2BSMainWindowController ()
+    // Define Main window controller private properties
+    @property (atomic, strong, retain) NSOutlineView *sidebar;
+    // Define Toolbar delegate private properties
+    @property (strong) NSArray      *toolbarNames;
+    @property (strong) NSDictionary *toolbarItems;
+@end
+
 
 @implementation V2BSMainWindowController
-	// Synthesize properties' accessors
-	@synthesize toolbarDelegate = _toolbarDelegate;
-	@synthesize sidebar = _sidebar;
+    // Synthesize Main window controller properties' accessors
+    @synthesize sidebar = _sidebar;
     @synthesize sidebarItems = _sidebarItems;
+    // Synthesize Toolbar delegate properties' accessors
+    @synthesize toolbarNames = _toolbarNames;
+    @synthesize toolbarItems = _toolbarItems;
 
-    // This forward events to _toolbarDelegate to fix the issue below.
-    // [FIXED]
-    //    - The ToolbarDelegate protocol must be attached to the main window controller
-    //      where it's supposed to be displayed (that seems to be the case here, as we
-    //      had defined it in an isolated class that is anexed to the main window controller
-    //      but when the event loop sends a default "hide" and/or "show" toolbar to the
-    //      main window controller, the application crashes, as this message is directed
-    //      to the main window controller, not the isolated delegate object.
-    // [OPTIMIZEME]
-    //    - This code is helpfull to solve the missing method invocation explained above,
-    //      but it needs improvement, maybe by adding the protocol ToolbarDelegate to the
-    //      mainWindow class (which everybody else seems to do). I'll let this reminder
-    //      here to keep a note for some future change.
-	-(void) forwardInvocation: (NSInvocation *)invocation
-	{
-		SEL aSelector = [invocation selector];
+    #pragma mark Main window controller methods
+    // Initializer
+    -(id) init
+    {
+        self = [super init];
+        if (self) {
+            // Set properties used by the Toolbar delegate methods
+            self.toolbarNames = @[@"newShelf",
+                                  @"newCollection",
+                                  @"newSmartCollection",
+                                  @"setPreferences",
+                                  @"openInfo"];
 
-		if ([_toolbarDelegate respondsToSelector: aSelector]) {
-			[invocation invokeWithTarget: _toolbarDelegate];
-		}
-		else {
-			[super forwardInvocation: invocation];
-		}
-	}
+            self.toolbarItems = @{@"newShelf":            @{@"label":    @"New Shelf",
+                                                            @"pallete":  @"New Shelf",
+                                                            @"tooltip":  @"Creates a new shelf",
+                                                            @"image":    @"NSFolder"},
+
+                                  @"newCollection":       @{@"label":    @"New Collection",
+                                                            @"pallete":  @"New Collection",
+                                                            @"tooltip":  @"Creates a new collection",
+                                                            @"image":    @"NSMultipleDocuments"},
+
+                                  @"newSmartCollection":  @{@"label":    @"Smart Collection",
+                                                            @"pallete":  @"Smart Collection",
+                                                            @"tooltip":  @"Creates a new smart collection",
+                                                            @"image":    @"NSFolderSmart"},
+
+                                  @"setPreferences":      @{@"label":    @"Preferences",
+                                                            @"pallete":  @"Preferences",
+                                                            @"tooltip":  @"Open the preferences pane settings",
+                                                            @"image":    @"NSPreferencesGeneral"},
+
+                                  @"openInfo":            @{@"label":    @"Open Info",
+                                                            @"pallete":  @"Open Info",
+                                                            @"tooltip":  @"Open selected item info pane",
+                                                            @"image":    @"NSInfo"}};
+        }
+        return self;
+    }
 
 	// awakeFromNib method
 	-(void) awakeFromNib
 	{
-		// Init the library toolbar delegate to use
-		_toolbarDelegate = [[V2BSMainLibraryToolbarDelegate alloc] init];
 		// Proceed with toolbar creation
 		NSToolbar *toolbar = [[NSToolbar alloc]
-							  initWithIdentifier: @"mainLibraryToolbar"];
+                              initWithIdentifier: @"mainLibraryToolbar"];
 		[toolbar setDisplayMode: NSToolbarDisplayModeIconAndLabel];
 		[toolbar setSizeMode: NSToolbarSizeModeSmall];
 		[toolbar setAllowsUserCustomization: YES];
 		[toolbar setAutosavesConfiguration: YES];
-		[toolbar setDelegate: _toolbarDelegate];
+		[toolbar setDelegate: self];
 		// Attach toolbar to main library window
 		[self.window setToolbar: toolbar];
 	}
@@ -105,5 +123,59 @@
 		/* Implement this method to handle any initialization after your window controller's window
 		   has been loaded from its nib file. */
 	}
+
+    #pragma mark NSToolbarDelegate related methods
+    // NSToolbarDelegate methods
+    -(NSToolbarItem *) toolbar: (NSToolbar *) toolbar
+         itemForItemIdentifier: (NSString *) itemIdent
+     willBeInsertedIntoToolbar: (BOOL) flag
+    {
+        NSToolbarItem *toolbarItem = nil;
+        for (id tbItem in self.toolbarNames) {
+            if ([itemIdent isEqual: tbItem]) {
+                NSDictionary *tbItemData = self.toolbarItems[tbItem];
+                toolbarItem = [[NSToolbarItem alloc] initWithItemIdentifier: tbItem];
+                [toolbarItem setLabel: tbItemData[@"label"]];
+                [toolbarItem setPaletteLabel: tbItemData[@"pallete"]];
+                [toolbarItem setToolTip: tbItemData[@"tooltip"]];
+                [toolbarItem setImage: [NSImage imageNamed: tbItemData[@"image"]]];
+                break;
+            }
+        }
+        return toolbarItem;
+    }
+
+    -(NSArray *) toolbarAllowedItemIdentifiers: (NSToolbar *) toolbar
+    {
+        return @[self.toolbarNames[0],
+                 self.toolbarNames[1],
+                 self.toolbarNames[2],
+                 self.toolbarNames[3],
+                 self.toolbarNames[4],
+                 NSToolbarSeparatorItemIdentifier,
+                 NSToolbarSpaceItemIdentifier,
+                 NSToolbarFlexibleSpaceItemIdentifier,
+                 NSToolbarCustomizeToolbarItemIdentifier,
+                 NSToolbarPrintItemIdentifier];
+    }
+
+    -(NSArray *) toolbarDefaultItemIdentifiers: (NSToolbar *) toolbar
+    {
+        return @[self.toolbarNames[0],
+                 self.toolbarNames[1],
+                 self.toolbarNames[2],
+                 self.toolbarNames[3],
+                 NSToolbarFlexibleSpaceItemIdentifier,
+                 self.toolbarNames[4]];
+    }
+
+    -(NSArray *) toolbarSelectableItemIdentifiers: (NSToolbar *) toolbar
+    {
+        return @[self.toolbarNames[0],
+                 self.toolbarNames[1],
+                 self.toolbarNames[2],
+                 self.toolbarNames[3],
+                 self.toolbarNames[4]];
+    }
 
 @end

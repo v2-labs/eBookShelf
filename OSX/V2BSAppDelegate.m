@@ -41,10 +41,9 @@
 			[PFAnalytics trackAppOpenedWithLaunchOptions: launchOptions]; */
 		}
 		/* Set and create the Library Window Controller */
-		V2BSMainWindowController *windowController;
-		windowController = [[V2BSMainWindowController alloc]
-							initWithWindowNibName: @"V2BSMainWindowController"];
-		[windowController showWindow: self];
+		V2BSMainWindowController *windowController = [[V2BSMainWindowController alloc]
+                                                      initWithWindowNibName: @"V2BSMainWindowController"];
+		[windowController showWindow: nil];
 		self.mainWindow = windowController;
 	}
 

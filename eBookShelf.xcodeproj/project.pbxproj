@@ -36,7 +36,6 @@
 		CF3FC0ED196E41B400336536 /* V2BSHashIDWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3FC0EC196E41B400336536 /* V2BSHashIDWrapper.m */; };
 		CF3FC0F0196E4AC300336536 /* V2BSDatabaseWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3FC0EF196E4AC300336536 /* V2BSDatabaseWrapper.m */; };
 		CF3FC0F3196EBFFE00336536 /* V2BSDataIBookDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3FC0F2196EBFFE00336536 /* V2BSDataIBookDecode.m */; };
-		CF3FC12F1961A7FC00D353D1 /* V2BSMainLibraryToolbarDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3FC12E1961A7FC00D353D1 /* V2BSMainLibraryToolbarDelegate.m */; };
 		CF79B61F178F45A60023538D /* hashID.c in Sources */ = {isa = PBXBuildFile; fileRef = CF79B614178F42AC0023538D /* hashID.c */; };
 		CF84623517811F2400E75927 /* DropboxOSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF0BC2671780EDFE00203FFE /* DropboxOSX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CF868CDA1781468900C86D7A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF868CD91781468900C86D7A /* Images.xcassets */; };
@@ -124,8 +123,6 @@
 		CF3FC0EF196E4AC300336536 /* V2BSDatabaseWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V2BSDatabaseWrapper.m; sourceTree = "<group>"; };
 		CF3FC0F1196EBFFE00336536 /* V2BSDataIBookDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2BSDataIBookDecode.h; sourceTree = "<group>"; };
 		CF3FC0F2196EBFFE00336536 /* V2BSDataIBookDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V2BSDataIBookDecode.m; sourceTree = "<group>"; };
-		CF3FC12D1961A7FB00D353D1 /* V2BSMainLibraryToolbarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2BSMainLibraryToolbarDelegate.h; sourceTree = "<group>"; };
-		CF3FC12E1961A7FC00D353D1 /* V2BSMainLibraryToolbarDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V2BSMainLibraryToolbarDelegate.m; sourceTree = "<group>"; };
 		CF79B613178F428D0023538D /* hashID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hashID.h; path = common/hashID.h; sourceTree = "<group>"; };
 		CF79B614178F42AC0023538D /* hashID.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = hashID.c; path = common/hashID.c; sourceTree = "<group>"; };
 		CF79B61A178F458F0023538D /* eBookShelfLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = eBookShelfLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -242,8 +239,6 @@
 				CFA5B6A6188AFB8D0093CA7B /* V2BSAppDelegate.m */,
 				CF22B00818923159008DC6D5 /* V2BSMainWindowController.h */,
 				CF22B00918923159008DC6D5 /* V2BSMainWindowController.m */,
-				CF3FC12D1961A7FB00D353D1 /* V2BSMainLibraryToolbarDelegate.h */,
-				CF3FC12E1961A7FC00D353D1 /* V2BSMainLibraryToolbarDelegate.m */,
 				CF3FC0D71968CA2D00336536 /* V2BSMainPreferencesController.h */,
 				CF3FC0D81968CA2D00336536 /* V2BSMainPreferencesController.m */,
 				CF3FC0E51968E2D800336536 /* V2BSPreferencesToolbarDelegate.h */,
@@ -465,7 +460,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF3FC12F1961A7FC00D353D1 /* V2BSMainLibraryToolbarDelegate.m in Sources */,
 				CF3FC0C91967779C00336536 /* V2BSDataDjvueDecode.m in Sources */,
 				CFA5B6A7188AFB8D0093CA7B /* V2BSAppDelegate.m in Sources */,
 				CF3FC0F0196E4AC300336536 /* V2BSDatabaseWrapper.m in Sources */,

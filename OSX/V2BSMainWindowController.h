@@ -9,12 +9,17 @@
 #import <Cocoa/Cocoa.h>
 #import <Quartz/Quartz.h>
 
-@class V2BSMainLibraryToolbarDelegate;
+@interface V2BSMainWindowController: NSWindowController <NSToolbarDelegate>
+    @property (atomic, strong, retain) IBOutlet NSArray *sidebarItems;
 
-@interface V2BSMainWindowController: NSWindowController
-	@property (retain) V2BSMainLibraryToolbarDelegate *toolbarDelegate;
-	@property (retain) IBOutlet NSOutlineView *sidebar;
-    @property (nonatomic, strong) NSArray *sidebarItems;
+    #pragma mark NSToolbarDelegate methods
+    // NSToolbarDelegate protocol methods
+    -(NSToolbarItem *) toolbar: (NSToolbar *) toolbar
+         itemForItemIdentifier: (NSString *) itemIdentifier
+     willBeInsertedIntoToolbar: (BOOL) flag;
+    -(NSArray *) toolbarAllowedItemIdentifiers: (NSToolbar *) toolbar;
+    -(NSArray *) toolbarDefaultItemIdentifiers: (NSToolbar *) toolbar;
+    -(NSArray *) toolbarSelectableItemIdentifiers: (NSToolbar *) toolbar;
 
 @end
 
