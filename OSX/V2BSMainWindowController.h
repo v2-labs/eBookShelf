@@ -10,9 +10,13 @@
 #import <Quartz/Quartz.h>
 
 @interface V2BSMainWindowController: NSWindowController <NSToolbarDelegate>
+    #pragma mark *** 
     @property (atomic, strong, retain) IBOutlet NSArray *sidebarItems;
 
-    #pragma mark NSToolbarDelegate methods
+    #pragma mark *** Main window controller methods
+    -(void) setToolbarContent;
+
+    #pragma mark *** NSToolbarDelegate methods
     // NSToolbarDelegate protocol methods
     -(NSToolbarItem *) toolbar: (NSToolbar *) toolbar
          itemForItemIdentifier: (NSString *) itemIdentifier

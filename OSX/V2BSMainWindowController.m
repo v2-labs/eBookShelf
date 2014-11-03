@@ -8,9 +8,11 @@
 
 #import "V2BSMainWindowController.h"
 
+// Definition of class' private properties
 @interface V2BSMainWindowController ()
     // Define Main window controller private properties
-    @property (atomic, strong, retain) NSOutlineView *sidebar;
+    //@property (atomic, strong, retain) IBOutlet NSToolbar     *toolbar;
+    @property (atomic, strong, retain) IBOutlet NSOutlineView *sidebar;
     // Define Toolbar delegate private properties
     @property (strong) NSArray      *toolbarNames;
     @property (strong) NSDictionary *toolbarItems;
@@ -25,50 +27,12 @@
     @synthesize toolbarNames = _toolbarNames;
     @synthesize toolbarItems = _toolbarItems;
 
-    #pragma mark Main window controller methods
-    // Initializer
-    -(id) init
-    {
-        self = [super init];
-        if (self) {
-            // Set properties used by the Toolbar delegate methods
-            self.toolbarNames = @[@"newShelf",
-                                  @"newCollection",
-                                  @"newSmartCollection",
-                                  @"setPreferences",
-                                  @"openInfo"];
-
-            self.toolbarItems = @{@"newShelf":            @{@"label":    @"New Shelf",
-                                                            @"pallete":  @"New Shelf",
-                                                            @"tooltip":  @"Creates a new shelf",
-                                                            @"image":    @"NSFolder"},
-
-                                  @"newCollection":       @{@"label":    @"New Collection",
-                                                            @"pallete":  @"New Collection",
-                                                            @"tooltip":  @"Creates a new collection",
-                                                            @"image":    @"NSMultipleDocuments"},
-
-                                  @"newSmartCollection":  @{@"label":    @"Smart Collection",
-                                                            @"pallete":  @"Smart Collection",
-                                                            @"tooltip":  @"Creates a new smart collection",
-                                                            @"image":    @"NSFolderSmart"},
-
-                                  @"setPreferences":      @{@"label":    @"Preferences",
-                                                            @"pallete":  @"Preferences",
-                                                            @"tooltip":  @"Open the preferences pane settings",
-                                                            @"image":    @"NSPreferencesGeneral"},
-
-                                  @"openInfo":            @{@"label":    @"Open Info",
-                                                            @"pallete":  @"Open Info",
-                                                            @"tooltip":  @"Open selected item info pane",
-                                                            @"image":    @"NSInfo"}};
-        }
-        return self;
-    }
-
+    #pragma mark *** Main window controller methods
 	// awakeFromNib method
 	-(void) awakeFromNib
 	{
+        // Update the toolbar content definition
+        [self setToolbarContent];
 		// Proceed with toolbar creation
 		NSToolbar *toolbar = [[NSToolbar alloc]
                               initWithIdentifier: @"mainLibraryToolbar"];
@@ -124,7 +88,46 @@
 		   has been loaded from its nib file. */
 	}
 
-    #pragma mark NSToolbarDelegate related methods
+
+    #pragma mark *** Complementary method to set up Main window toolbar buttons
+    // Initialize Toolbar contents
+    -(void) setToolbarContent
+    {
+        // Set properties used by the Toolbar delegate methods
+        self.toolbarNames = @[@"newShelf",
+                              @"newCollection",
+                              @"newSmartCollection",
+                              @"setPreferences",
+                              @"openInfo"];
+
+        self.toolbarItems = @{@"newShelf":            @{@"label":    @"New Shelf",
+                                                        @"pallete":  @"New Shelf",
+                                                        @"tooltip":  @"Creates a new shelf",
+                                                        @"image":    @"NSFolder"},
+
+                              @"newCollection":       @{@"label":    @"New Collection",
+                                                        @"pallete":  @"New Collection",
+                                                        @"tooltip":  @"Creates a new collection",
+                                                        @"image":    @"NSMultipleDocuments"},
+
+                              @"newSmartCollection":  @{@"label":    @"Smart Collection",
+                                                        @"pallete":  @"Smart Collection",
+                                                        @"tooltip":  @"Creates a new smart collection",
+                                                        @"image":    @"NSFolderSmart"},
+
+                              @"setPreferences":      @{@"label":    @"Preferences",
+                                                        @"pallete":  @"Preferences",
+                                                        @"tooltip":  @"Open the preferences pane settings",
+                                                        @"image":    @"NSPreferencesGeneral"},
+
+                              @"openInfo":            @{@"label":    @"Open Info",
+                                                        @"pallete":  @"Open Info",
+                                                        @"tooltip":  @"Open selected item info pane",
+                                                        @"image":    @"NSInfo"}};
+    }
+
+
+    #pragma mark *** NSToolbarDelegate related methods
     // NSToolbarDelegate methods
     -(NSToolbarItem *) toolbar: (NSToolbar *) toolbar
          itemForItemIdentifier: (NSString *) itemIdent
