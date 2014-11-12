@@ -28,65 +28,65 @@
     @synthesize toolbarItems = _toolbarItems;
 
     #pragma mark *** Main window controller methods
-	// awakeFromNib method
-	-(void) awakeFromNib
-	{
+    // awakeFromNib method
+    -(void) awakeFromNib
+    {
         // Update the toolbar content definition
         [self setToolbarContent];
-		// Proceed with toolbar creation
-		NSToolbar *toolbar = [[NSToolbar alloc]
+        // Proceed with toolbar creation
+        NSToolbar *toolbar = [[NSToolbar alloc]
                               initWithIdentifier: @"mainLibraryToolbar"];
-		[toolbar setDisplayMode: NSToolbarDisplayModeIconAndLabel];
-		[toolbar setSizeMode: NSToolbarSizeModeSmall];
-		[toolbar setAllowsUserCustomization: YES];
-		[toolbar setAutosavesConfiguration: YES];
-		[toolbar setDelegate: self];
-		// Attach toolbar to main library window
-		[self.window setToolbar: toolbar];
-	}
+        [toolbar setDisplayMode: NSToolbarDisplayModeIconOnly];
+        [toolbar setSizeMode: NSToolbarSizeModeSmall];
+        [toolbar setAllowsUserCustomization: YES];
+        [toolbar setAutosavesConfiguration: YES];
+        [toolbar setDelegate: self];
+        // Attach toolbar to main library window
+        [self.window setToolbar: toolbar];
+    }
 
-	// initWithWindow method
-	-(id) initWithWindow: (NSWindow *)window
-	{
-		self = [super initWithWindow: window];
-		if (self) {
-			// Initialization code here.
-			//
-			_sidebarItems = [NSArray arrayWithObjects:
-							    [NSDictionary dictionaryWithObjectsAndKeys: @"BUZZ!", @"title",
-							        [NSArray arrayWithObjects:
-									    [NSDictionary dictionaryWithObject: @"Campain" forKey: @"title"],
-							            [NSDictionary dictionaryWithObject: @"Reaction" forKey: @"title"],
-							            nil],
-							        @"children",
-							        [NSNumber numberWithBool: YES], @"header",
-							        nil],
-							    [NSDictionary dictionaryWithObjectsAndKeys: @"HEALTH", @"title",
-							        [NSArray arrayWithObjects:
-								        [NSDictionary dictionaryWithObject: @"Audience" forKey: @"title"],
-								        [NSDictionary dictionaryWithObject: @"Expand" forKey: @"title"],
-								        nil],
-							        @"children",
-							        [NSNumber numberWithBool: YES], @"header",
-							        nil],
-							nil];
-		}
-		return self;
-	}
+    // initWithWindow method
+    -(id) initWithWindow: (NSWindow *)window
+    {
+        self = [super initWithWindow: window];
+        if (self) {
+            // Initialization code here.
+            //
+            self.sidebarItems = [NSArray arrayWithObjects:
+                                    [NSDictionary dictionaryWithObjectsAndKeys: @"BUZZ!", @"title",
+                                        [NSArray arrayWithObjects:
+                                            [NSDictionary dictionaryWithObject: @"Campain" forKey: @"title"],
+                                            [NSDictionary dictionaryWithObject: @"Reaction" forKey: @"title"],
+                                            nil],
+                                        @"children",
+                                        [NSNumber numberWithBool: YES], @"header",
+                                        nil],
+                                    [NSDictionary dictionaryWithObjectsAndKeys: @"HEALTH", @"title",
+                                        [NSArray arrayWithObjects:
+                                            [NSDictionary dictionaryWithObject: @"Audience" forKey: @"title"],
+                                            [NSDictionary dictionaryWithObject: @"Expand" forKey: @"title"],
+                                            nil],
+                                        @"children",
+                                        [NSNumber numberWithBool: YES], @"header",
+                                        nil],
+                                nil];
+        }
+        return self;
+    }
 
-	// windowWillLoad method
-	-(void) windowWillLoad {
-		[super windowWillLoad];
-		/* Implement this method to handle any initialization before your window controller's window
-		   has been loaded from its nib file. */
-	}
+    // windowWillLoad method
+    -(void) windowWillLoad {
+        [super windowWillLoad];
+        /* Implement this method to handle any initialization before your window controller's window
+           has been loaded from its nib file. */
+    }
 
-	// windowDidLoad method
-	-(void) windowDidLoad {
-		[super windowDidLoad];
-		/* Implement this method to handle any initialization after your window controller's window
-		   has been loaded from its nib file. */
-	}
+    // windowDidLoad method
+    -(void) windowDidLoad {
+        [super windowDidLoad];
+        /* Implement this method to handle any initialization after your window controller's window
+           has been loaded from its nib file. */
+    }
 
 
     #pragma mark *** Complementary method to set up Main window toolbar buttons
