@@ -98,7 +98,8 @@
                               @"newCollection",
                               @"newSmartCollection",
                               @"setPreferences",
-                              @"openInfo"];
+                              @"openInfo",
+                              @"SearchItem"];
 
         self.toolbarItems = @{@"newShelf":            @{@"label":    @"New Shelf",
                                                         @"pallete":  @"New Shelf",
@@ -145,6 +146,18 @@
                 break;
             }
         }
+        if ([itemIdent isEqualToString:@"SearchItem"]) {
+            toolbarItem = [[NSToolbarItem alloc] initWithItemIdentifier: itemIdent];
+            NSSearchField *searchField = [[NSSearchField alloc] init];
+            [searchField sizeToFit];
+            NSRect cellFrame = [searchField frame];
+            [toolbarItem setLabel: @"Search"];
+            [toolbarItem setPaletteLabel: [toolbarItem label]];
+            [toolbarItem setToolTip: @"Search by author, publisher, title, etc..."];
+            [toolbarItem setView: searchField];
+            [toolbarItem setMinSize: cellFrame.size];
+            [toolbarItem setMaxSize: cellFrame.size];
+        }
         return toolbarItem;
     }
 
@@ -159,7 +172,8 @@
                  NSToolbarSpaceItemIdentifier,
                  NSToolbarFlexibleSpaceItemIdentifier,
                  NSToolbarCustomizeToolbarItemIdentifier,
-                 NSToolbarPrintItemIdentifier];
+                 NSToolbarPrintItemIdentifier,
+                 self.toolbarNames[5]];
     }
 
     -(NSArray *) toolbarDefaultItemIdentifiers: (NSToolbar *) toolbar
@@ -168,8 +182,9 @@
                  self.toolbarNames[1],
                  self.toolbarNames[2],
                  self.toolbarNames[3],
+                 self.toolbarNames[4],
                  NSToolbarFlexibleSpaceItemIdentifier,
-                 self.toolbarNames[4]];
+                 self.toolbarNames[5]];
     }
 
     -(NSArray *) toolbarSelectableItemIdentifiers: (NSToolbar *) toolbar
@@ -178,7 +193,8 @@
                  self.toolbarNames[1],
                  self.toolbarNames[2],
                  self.toolbarNames[3],
-                 self.toolbarNames[4]];
+                 self.toolbarNames[4],
+                 self.toolbarNames[5]];
     }
 
 @end
