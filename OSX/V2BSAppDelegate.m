@@ -27,37 +27,37 @@
 #import "V2BSMainWindowController.h"
 
 @implementation V2BSAppDelegate
-	@synthesize mainWindow;
+    @synthesize mainWindow;
 
-	/* Implement your own initialization steps after application launch */
-	-(void) applicationDidFinishLaunching: (NSNotification *) aNotification
-	{
-		/* If Parse is active on App Preferences, set it up here */
-		if (0) {
-			/* Connect the application to the Parse remote counterpart */
-			[Parse setApplicationId:@"ot8WvQ5GivrIwsPxTCYkqa2hGutbYmVarSso1WYh"
-						  clientKey:@"xhe5InypBGr3bGikcbGwI1zdbanG7TLmvWCiAB9t"];
-			/* Track application usage statistics
-			[PFAnalytics trackAppOpenedWithLaunchOptions: launchOptions]; */
-		}
-		/* Set and create the Library Window Controller */
-		V2BSMainWindowController *windowController = [[V2BSMainWindowController alloc]
+    /* Implement your own initialization steps after application launch */
+    -(void) applicationDidFinishLaunching: (NSNotification *) aNotification
+    {
+        /* If Parse is active on App Preferences, set it up here */
+        if (0) {
+            /* Connect the application to the Parse remote counterpart */
+            [Parse setApplicationId:@"ot8WvQ5GivrIwsPxTCYkqa2hGutbYmVarSso1WYh"
+                          clientKey:@"xhe5InypBGr3bGikcbGwI1zdbanG7TLmvWCiAB9t"];
+            /* Track application usage statistics
+            [PFAnalytics trackAppOpenedWithLaunchOptions: launchOptions]; */
+        }
+        /* Set and create the Library Window Controller */
+        V2BSMainWindowController *windowController = [[V2BSMainWindowController alloc]
                                                       initWithWindowNibName: @"V2BSMainWindowController"];
-		[windowController showWindow: nil];
-		self.mainWindow = windowController;
-	}
+        [windowController showWindow: nil];
+        self.mainWindow = windowController;
+    }
 
-	/* Implement your own finalization steps before application finishes */
-	-(void) applicationWillTerminate: (NSNotification *) aNotification
-	{
-		/* Insert code here to finalize your application */
-	}
+    /* Implement your own finalization steps before application finishes */
+    -(void) applicationWillTerminate: (NSNotification *) aNotification
+    {
+        /* Insert code here to finalize your application */
+    }
 
-	/* Implement method definition for newBookShelf */
-	-(IBAction) newBookShelf: (id) sender
-	{
-		/* ... */
-	}
+    /* Implement method definition for newBookShelf */
+    -(IBAction) newBookShelf: (id) sender
+    {
+        /* ... */
+    }
 
 @end
 

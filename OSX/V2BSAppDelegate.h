@@ -30,8 +30,8 @@
 @class V2BSBookShelf;
 
 @interface V2BSAppDelegate: NSObject <NSApplicationDelegate>
-	@property (retain) V2BSMainWindowController *mainWindow;
-	@property (retain) V2BSBookShelf *bookShelf;
+    @property (retain) V2BSMainWindowController *mainWindow;
+    @property (retain) V2BSBookShelf *bookShelf;
 
-	-(IBAction) newBookShelf: (id) sender;
+    -(IBAction) newBookShelf: (id) sender;
 @end
