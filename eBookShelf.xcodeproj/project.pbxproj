@@ -313,9 +313,9 @@
 		CFA2FB13148D0CA7000540DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CFA2FB17148D0CA7000540DB /* AppKit.framework */,
 				CFA2FB14148D0CA7000540DB /* Cocoa.framework */,
 				CFA2FB19148D0CA7000540DB /* Foundation.framework */,
-				CFA2FB17148D0CA7000540DB /* AppKit.framework */,
 				CFB469981933C36700B91B2C /* Quartz.framework */,
 				CF0BC90119738FDA00340B0A /* CFNetwork.framework */,
 				CF0BC9031973900E00340B0A /* CoreGraphics.framework */,
