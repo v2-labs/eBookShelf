@@ -43,7 +43,7 @@
         /* Set and create the Library Window Controller */
         V2BSMainWindowController *windowController = [[V2BSMainWindowController alloc]
                                                       initWithWindowNibName: @"V2BSMainWindowController"];
-        [windowController showWindow: nil];
+        [windowController showWindow: self];
         self.mainWindow = windowController;
     }
 
