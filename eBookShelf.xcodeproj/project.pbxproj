@@ -39,6 +39,8 @@
 		CF79B61F178F45A60023538D /* hashID.c in Sources */ = {isa = PBXBuildFile; fileRef = CF79B614178F42AC0023538D /* hashID.c */; };
 		CF84623517811F2400E75927 /* DropboxOSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF0BC2671780EDFE00203FFE /* DropboxOSX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CF868CDA1781468900C86D7A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF868CD91781468900C86D7A /* Images.xcassets */; };
+		CF8BB7C11A1EF2150085EAEC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8BB7C01A1EF2150085EAEC /* CoreData.framework */; };
+		CF8BB8181A1EF4800085EAEC /* eBookShelf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF8BB8161A1EF4800085EAEC /* eBookShelf.xcdatamodeld */; };
 		CFA2FB15148D0CA7000540DB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA2FB14148D0CA7000540DB /* Cocoa.framework */; };
 		CFA5B6A7188AFB8D0093CA7B /* V2BSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA5B6A6188AFB8D0093CA7B /* V2BSAppDelegate.m */; };
 		CFA5B6A8188CD1B20093CA7B /* eBookShelfLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF79B61A178F458F0023538D /* eBookShelfLib.a */; };
@@ -127,10 +129,10 @@
 		CF79B614178F42AC0023538D /* hashID.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = hashID.c; path = common/hashID.c; sourceTree = "<group>"; };
 		CF79B61A178F458F0023538D /* eBookShelfLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = eBookShelfLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF868CD91781468900C86D7A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CF8BB7C01A1EF2150085EAEC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CF8BB8171A1EF4800085EAEC /* eBookShelf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eBookShelf.xcdatamodel; sourceTree = "<group>"; };
 		CFA2FB10148D0CA7000540DB /* eBookShelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eBookShelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA2FB14148D0CA7000540DB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		CFA2FB17148D0CA7000540DB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		CFA2FB19148D0CA7000540DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CFA5B6A5188AFB8D0093CA7B /* V2BSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V2BSAppDelegate.h; sourceTree = "<group>"; };
 		CFA5B6A6188AFB8D0093CA7B /* V2BSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V2BSAppDelegate.m; sourceTree = "<group>"; };
 		CFA5B6AB188DD8440093CA7B /* database.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = database.c; path = common/database.c; sourceTree = "<group>"; };
@@ -156,13 +158,14 @@
 				CFA5B6A8188CD1B20093CA7B /* eBookShelfLib.a in Frameworks */,
 				CF0BC90C1973909A00340B0A /* libz.dylib in Frameworks */,
 				CF0BC90A1973906800340B0A /* libsqlite3.dylib in Frameworks */,
-				CF0BC9081973904D00340B0A /* SystemConfiguration.framework in Frameworks */,
-				CF0BC9061973903000340B0A /* CoreLocation.framework in Frameworks */,
-				CF0BC9041973900E00340B0A /* CoreGraphics.framework in Frameworks */,
-				CF0BC90219738FDA00340B0A /* CFNetwork.framework in Frameworks */,
-				CF0BC90019738FBB00340B0A /* ApplicationServices.framework in Frameworks */,
 				CFA2FB15148D0CA7000540DB /* Cocoa.framework in Frameworks */,
 				CFB469991933C36700B91B2C /* Quartz.framework in Frameworks */,
+				CF8BB7C11A1EF2150085EAEC /* CoreData.framework in Frameworks */,
+				CF0BC90219738FDA00340B0A /* CFNetwork.framework in Frameworks */,
+				CF0BC9041973900E00340B0A /* CoreGraphics.framework in Frameworks */,
+				CF0BC9061973903000340B0A /* CoreLocation.framework in Frameworks */,
+				CF0BC9081973904D00340B0A /* SystemConfiguration.framework in Frameworks */,
+				CF0BC90019738FBB00340B0A /* ApplicationServices.framework in Frameworks */,
 				CFF28C771634285F00CA27D1 /* Security.framework in Frameworks */,
 				CF0BC2DE1780F97300203FFE /* DropboxOSX.framework in Frameworks */,
 				CF0BC8FE19738F6700340B0A /* ParseOSX.framework in Frameworks */,
@@ -177,6 +180,7 @@
 			children = (
 				CF868CD91781468900C86D7A /* Images.xcassets */,
 				CF0BC1EB1780E6EE00203FFE /* eBookShelf.entitlements */,
+				CF8BB8161A1EF4800085EAEC /* eBookShelf.xcdatamodeld */,
 				CF3B005718E9CD8F00B9D4F3 /* Resources */,
 				CF0BC2651780E8E700203FFE /* Main */,
 				CF3B005818E9CE2800B9D4F3 /* MainBookShelf */,
@@ -313,10 +317,9 @@
 		CFA2FB13148D0CA7000540DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CFA2FB17148D0CA7000540DB /* AppKit.framework */,
 				CFA2FB14148D0CA7000540DB /* Cocoa.framework */,
-				CFA2FB19148D0CA7000540DB /* Foundation.framework */,
 				CFB469981933C36700B91B2C /* Quartz.framework */,
+				CF8BB7C01A1EF2150085EAEC /* CoreData.framework */,
 				CF0BC90119738FDA00340B0A /* CFNetwork.framework */,
 				CF0BC9031973900E00340B0A /* CoreGraphics.framework */,
 				CF0BC9051973902F00340B0A /* CoreLocation.framework */,
@@ -461,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF3FC0C91967779C00336536 /* V2BSDataDjvueDecode.m in Sources */,
+				CF8BB8181A1EF4800085EAEC /* eBookShelf.xcdatamodeld in Sources */,
 				CFA5B6A7188AFB8D0093CA7B /* V2BSAppDelegate.m in Sources */,
 				CF3FC0F0196E4AC300336536 /* V2BSDatabaseWrapper.m in Sources */,
 				CF3FC0DA1968CA2D00336536 /* V2BSMainPreferencesController.m in Sources */,
@@ -738,6 +742,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CF8BB8161A1EF4800085EAEC /* eBookShelf.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CF8BB8171A1EF4800085EAEC /* eBookShelf.xcdatamodel */,
+			);
+			currentVersion = CF8BB8171A1EF4800085EAEC /* eBookShelf.xcdatamodel */;
+			path = eBookShelf.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CFA2FB07148D0CA6000540DB /* Project object */;
 }
