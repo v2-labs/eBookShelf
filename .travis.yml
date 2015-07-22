@@ -1,3 +1,5 @@
 language: objective-c
 xcode_project: eBookShelf.xcodeproj
 xcode_scheme: eBookShelf
+notifications:
+  slack: v2-labs:E8pIUA0hSkKE2gaw644ErrDH
